@@ -14,7 +14,6 @@ html {
 
 h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 3.75rem;
   letter-spacing: 0.08em;
   text-align: center;
   font-weight: 300;
@@ -88,10 +87,6 @@ a {
   margin: auto;
   padding-top: 2px;
   padding-right: 20px;
-}
-
-.header-content__title {
-  margin: 0 0 53px;
 }
 
 .header-menu {
@@ -168,15 +163,10 @@ a {
 
 .skills {
   padding: 10px;
-  margin-bottom: 30px;
 }
 
 .skills__container {
   display: grid;
-  grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-  gap: 10px;
-  margin-bottom: 20px;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .skills__actions {
@@ -196,6 +186,7 @@ a {
 
 .skill-item:hover .skill-item__link {
   color: #d66926;
+  transition: transform 8s;
 }
 
 .skill-item:hover {
@@ -265,7 +256,6 @@ a {
   padding: 20px;
   justify-content: center;
   align-items: center;
-  /* transform: color 0.5s; */
 }
 
 .skill-item__overlay {
@@ -274,6 +264,75 @@ a {
   /* background-color: #2d3651; */
   opacity: 0.8;
   transition: opacity 0.5s;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  .header-content__title {
+    margin: 0 0 53px;
+  }
+  .skills__container {
+    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  } 
+  .skills {
+    margin-bottom: 30px;
+  } 
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .header-content__title {
+    margin: 0 0 43px;
+  }
+  .skills__container {
+    grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }  
+  .skills {
+    margin-bottom: 30px;
+  } 
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+  .header-content__title {
+    margin: 0 0 33px;
+  }
+  .skills__container {
+    grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .skills {
+    margin-bottom: 30px;
+  }   
+}
+
+@media (max-width:575px) {
+  .skills__container {
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 10px;
+  }
+  .btn--primary {
+    margin-top: 10px;
+  }
+  .skills {
+    margin-bottom: 10px;
+  }   
 }
 
 @media (min-height: 691px) {
