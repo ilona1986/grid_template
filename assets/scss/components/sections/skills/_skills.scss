@@ -1,0 +1,12 @@
+.skills {
+  padding: 10px;
+
+  &__container {
+    display: grid;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+  } 
+}
