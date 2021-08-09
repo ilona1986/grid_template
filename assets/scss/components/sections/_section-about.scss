@@ -1,0 +1,19 @@
+.about {
+  background-color: $color-gray-light;  
+  letter-spacing: 0.055em;
+  
+ &__container {
+  position: relative;
+  display: grid;
+  padding-left: 20px;
+  
+  @extend %container;
+  }
+  
+
+  &__image {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  }
+}
