@@ -10,7 +10,9 @@
   @extend %container;
   }
   
-
+  // &__content p:first-of-type {
+  //   position: relative;
+  // }
   &__image {
   display: grid;
   align-content: center;

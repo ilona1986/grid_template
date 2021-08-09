@@ -1,5 +1,5 @@
+@use "mixins/extends";
 @import "presets/skin";
-@import "mixins/extends";
 @import "presets/variables";
 
 @import "common/typography";
@@ -13,6 +13,7 @@
 @import "components/sections/skills/skills";
 @import "components/sections/skills/skill-item";
 @import "components/sections/section-about";
+@import "components/sections/section-form";
 // @use "../../libs/normalize.css/normalize";
 
 // @use "presets/skin";
@@ -42,6 +43,7 @@
   }
   p {
     line-height: 1.5rem;
+    font-size: 1.125rem;
   }
   .header-content__title {
     margin: 0 0 53px;
@@ -59,17 +61,16 @@
   .skills {
     margin-bottom: 30px;
   }
-  .posts, 
+  .skills__actions .btn--primary {
+    min-width: 350px;
+  } 
   .about {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .about__container {
     gap: 100px;
     grid-template-columns: 1fr 270px;
-  }
-  .about__content p {
-    font-size: 1.125rem;
   }
   .about__content p:first-of-type::after {
     right: -50px;
@@ -84,8 +85,26 @@
     width: 1px;
     height: 200px;
     background-color: rgb(112, 112, 112);
+    content: "";
+  }
+  .form {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
+
+
+@media (min-width: 768px) {
+.form__container {
+  grid-template-columns: repeat(3, 1fr);
+ }
+}
+
+// @media (max-width: 576px) {
+//  .skills__actions .btn--primary {
+//   min-width: 350px;
+//  }
+// }
 
 @media (max-width: 991px) and (min-width: 768px) {
   h1 {
@@ -114,9 +133,12 @@
   .skills {
     margin-bottom: 30px;
   } 
+  .skills__actions .btn--primary {
+    min-width: 350px;
+   }
   .about {
     padding-top: 53px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
     // 80px
   }
   .about__container {
@@ -135,10 +157,20 @@
     top: 0;
     width: 1px;
     height: 200px;
-    background-color: rgb(112, 112, 112);
+    background-color: #707070;
+    content: "";
   }
   .about__image {
     margin-top: 20px;
+  }
+  .form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .form-item__input {
+    font-size: 1rem;
+    letter-spacing: 0.125em;
+    line-height: 1.5em;
   }
 }
 
@@ -174,19 +206,22 @@
   }
   .skills {
     margin-bottom: 30px;
-  } 
+  }
+  .skills__actions .btn--primary {
+    min-width: 350px;
+   } 
   .about {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   //  60px
   }  
   .about__container {
     gap: 20px;
     grid-template-columns: 1fr 236px;
   }
-  .about__container {
-   margin-right: 20px;
-  }
+  // .about__container {
+  //  margin-right: 20px;
+  // }
   .about__content p:first-of-type::after {
     right: -10px;
   }
@@ -200,7 +235,25 @@
     width: 1px;
     height: 200px;
     background-color: rgb(112, 112, 112);
+    content: "";
   }
+
+  .form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+ 
+@media (max-width: 767px) and (min-width: 576px) {
+.form__container {
+    grid-template-columns: repeat(2, 1fr);
+    .form-item:nth-of-type(1) {
+      grid-column: 1/span 2;
+  }
+}
+.about__container {
+  margin-right: 20px;
+ }
 }
 
 @media (max-width:575px) {
@@ -251,7 +304,17 @@
     gap: 20px;
     grid-template-columns: 1fr;
   } 
+  .about__content p:first-of-type::after {
+    display: none;
+  }
   
+  .about__image {
+    // margin-bottom: 10px;
+    margin-right: -35px;
+  }
+  .btn--primary {
+    margin-top: 0;
+  }
 }
 
 @media (min-height: 691px) {
