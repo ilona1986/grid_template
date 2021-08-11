@@ -1,0 +1,74 @@
+.posts {
+&__container {
+ 
+  padding-left: 20px;
+  @extend %container;
+}
+
+&__images {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding-bottom: 20px;
+}
+
+&__actions {
+  display: flex;
+  justify-content: center;
+} 
+}
+
+.post-item {
+  transition: background-color 0.5s;
+  background-color: rgb(238, 238, 238);
+}
+
+.post-item:hover {
+    background-color: #d8d8d8;
+}
+
+.post-item:hover .post-item__image img {
+    transform: scale(1.1);
+}
+
+.post-item__link {
+  display: grid;
+  overflow: hidden;
+  height: 100%;
+  grid-template-rows: 300px 1fr;
+}
+
+.post-item__image img {
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.5s;
+}
+.post-item__image {
+  display: flex;
+  justify-content: center;
+  background-color: $color-primary;
+  overflow: hidden;
+  align-content: center;
+}
+
+.post-item__title {
+  display: grid;
+  align-content: center;
+  padding: 20px;
+}
+
+.post-item__title h3 {
+  transition: color 0.5s;
+  text-align: center;
+}
+.post-item__title p {
+  transition: color 0.5s;
+  text-align: center;
+  // margin-top: 10px;
+}
+
+@for $i from 1 through 6 {
+    .post-item:nth-of-type(#{$i}) {
+      grid-area: p#{$i};
+    }
+}

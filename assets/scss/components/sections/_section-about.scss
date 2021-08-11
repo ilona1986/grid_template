@@ -10,9 +10,9 @@
   @extend %container;
   }
   
-  // &__content p:first-of-type {
-  //   position: relative;
-  // }
+  &__content p:last-of-type {
+    margin: 0;
+}
   &__image {
   display: grid;
   align-content: center;

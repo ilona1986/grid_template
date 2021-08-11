@@ -14,17 +14,14 @@
 @import "components/sections/skills/skill-item";
 @import "components/sections/section-about";
 @import "components/sections/section-form";
+@import "components/sections/section-posts";
 // @use "../../libs/normalize.css/normalize";
 
-// @use "presets/skin";
-// @use "presets/variables";
+@import "presets/skin";
+@import "presets/variables";
 
 // @use "mixins/mixins";
 // @use "mixins/mixins-media";
-
-// @use "components/sections/section-about";
-// @use "components/sections/section-form";
-// @use "components/sections/section-posts";
 
 // @use "components/footer/footer";
 
@@ -39,42 +36,59 @@
     letter-spacing: 0.1em;
     line-height: 1.2em;
     margin-bottom: 3rem;
-    margin-top: 0;
+  }
+  h3 {
+    letter-spacing: 0.05em;
   }
   p {
+    letter-spacing: 0.05em;
+    // line-height: 1.5rem;
+    // font-size: 1.125rem;
+  }
+  p.about {
     line-height: 1.5rem;
     font-size: 1.125rem;
   }
+  // p.posts {
+  //   font-size: 18px;
+  //   letter-spacing: 1px;
+  //   line-height: 20px;
+  // }
   .header-content__title {
     margin: 0 0 53px;
   }
+
   .btn--light {
     font-size: 1rem;
     letter-spacing: 0.05em;
   }
+
   .skills__container {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 20px;
   } 
+
   .skills {
     margin-bottom: 30px;
   }
-  .skills__actions .btn--primary {
-    min-width: 350px;
-  } 
+
+  .posts, 
   .about {
     padding-top: 100px;
     padding-bottom: 60px;
   }
+
   .about__container {
     gap: 100px;
     grid-template-columns: 1fr 270px;
   }
+
   .about__content p:first-of-type::after {
     right: -50px;
   }
+
   .about__content p:first-of-type {
     position: relative;
   }
@@ -87,9 +101,18 @@
     background-color: rgb(112, 112, 112);
     content: "";
   }
+
   .form {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .posts__images {
+    grid-template-areas:
+        "p1 p1 p2 p3"
+        "p4 p5 p6 p6";
+    grid-template-columns: repeat(4, 1fr);
+
   }
 }
 
@@ -100,20 +123,22 @@
  }
 }
 
-// @media (max-width: 576px) {
-//  .skills__actions .btn--primary {
-//   min-width: 350px;
-//  }
-// }
+@media (min-width: 576px) {
+ .posts__actions .btn--primary, .skills__actions .btn--primary {
+   min-width: 350px;
+ }
+}
+
 
 @media (max-width: 991px) and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
   }
   h2 {
+    margin-bottom: 2.625rem;
     font-size: 2rem;
-    letter-spacing: 0.09375em;
-    line-height: 1.25em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
   }
   .header-content__title {
     margin: 0 0 43px;
@@ -160,9 +185,7 @@
     background-color: #707070;
     content: "";
   }
-  .about__image {
-    margin-top: 20px;
-  }
+  
   .form {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -172,6 +195,20 @@
     letter-spacing: 0.125em;
     line-height: 1.5em;
   }
+  .posts,
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .posts__images {
+    grid-template-areas:
+        "p1 p1 p2"
+        "p3 p4 p4"
+        "p5 p5 p6";
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -180,8 +217,9 @@
   }
   h2 {
     font-size: 1.5rem;
-    letter-spacing: 0.0833em;
-    line-height: 2rem;
+    // letter-spacing: 0.0833em;  for posts
+    // line-height: 2rem; for posts
+    margin-bottom: 2.25rem;
   }
   .header-content__title {
     margin: 0 0 33px;
@@ -210,10 +248,10 @@
   .skills__actions .btn--primary {
     min-width: 350px;
    } 
+  .posts,
   .about {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
-  //  60px
   }  
   .about__container {
     gap: 20px;
@@ -242,6 +280,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  
 }
  
 @media (max-width: 767px) and (min-width: 576px) {
@@ -254,17 +294,25 @@
 .about__container {
   margin-right: 20px;
  }
+
+ .posts__images {
+  grid-template-areas:
+      "p1 p2"
+      "p3 p4"
+      "p5 p6";
+  grid-template-columns: 1fr 1fr;
+}
 }
 
 @media (max-width:575px) {
   h2 {
     text-align: center;
-    margin-bottom: 23px;
+    // margin-bottom: 2.25rem;
   }
-  p {
-    letter-spacing: 0.0625em;
-    line-height: 1.5em;
-  }
+  // p {
+  //   letter-spacing: 0.0625em;
+  //   line-height: 1.5em;
+  // }
   .header-navbar__list {
     display: none;
   }
@@ -315,6 +363,11 @@
   .btn--primary {
     margin-top: 0;
   }
+
+  .posts__images {
+    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+    grid-template-columns: 1fr;
+}
 }
 
 @media (min-height: 691px) {

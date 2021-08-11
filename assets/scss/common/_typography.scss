@@ -10,7 +10,7 @@ html {
   color: $color-gray;
   font-size: 16px;
   overflow-y: scroll;
-  letter-spacing: 0.1em;
+  // letter-spacing: 0.1em;  для текста картиноках в постах
 }
 
 h1 {
@@ -18,19 +18,32 @@ h1 {
   letter-spacing: 0.08em;
   text-align: center;
   font-weight: 300;
-  /* display: inline-flexbox; */
 }
 
 h2 {
   color: $color-primary;
   font-weight: 700;
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", serif;
+  margin-top: 0;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
 }
+h3 {
+  font-family: "Roboto Slab", serif;
+  color: #637588;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+}
+
 
 a {
   text-decoration: none;
   color: $color-light;
 }
 p {
-  margin: 0;
+  // margin: 0; для текста на картинках в постах
+  color: $color-gray;
+}
+img {
+  border-style: none;
 }
