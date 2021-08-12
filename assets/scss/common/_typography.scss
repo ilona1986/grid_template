@@ -6,6 +6,7 @@
 }
 
 html {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   color: $color-gray;
   font-size: 16px;
@@ -28,6 +29,7 @@ h2 {
   line-height: 1.2em;
   letter-spacing: 0.1em;
 }
+
 h3 {
   font-family: "Roboto Slab", serif;
   color: #637588;
@@ -35,15 +37,16 @@ h3 {
   letter-spacing: 0.05em;
 }
 
-
 a {
   text-decoration: none;
   color: $color-light;
 }
+
 p {
-  // margin: 0; для текста на картинках в постах
   color: $color-gray;
 }
+
 img {
   border-style: none;
 }
+
