@@ -1,7 +1,6 @@
 .header-content__container, .header-menu__container, .about__container, .form__container, .posts__container, .footer__container {
   max-width: 1340px;
   margin: auto;
-  padding-top: 2px;
   padding-right: 20px;
 }
 
@@ -36,13 +35,6 @@ h2 {
   letter-spacing: 0.1em;
 }
 
-h3 {
-  font-family: "Roboto Slab", serif;
-  color: #637588;
-  font-size: 1.125rem;
-  letter-spacing: 0.05em;
-}
-
 a {
   text-decoration: none;
   color: #ffffff;
@@ -59,7 +51,7 @@ img {
 .btn {
   height: 60px;
   font-size: 1.125rem;
-  letter-spacing: 0.111em;
+  letter-spacing: 0.1em;
   background-color: rgba(45, 54, 81, 0.1);
   padding-left: 1em;
   padding-right: 1em;
@@ -91,10 +83,6 @@ img {
   background-color: rgba(45, 54, 81, 0.8);
   /*#2d3651*/
   border: 2px solid #2d3651;
-}
-
-button, input {
-  font-family: inherit;
 }
 
 .header {
@@ -157,7 +145,7 @@ button, input {
 }
 
 .header-navbar {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 .header-navbar__btn {
   display: none;
@@ -231,6 +219,8 @@ button, input {
   inset: 0;
   z-index: 1;
   margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
 }
 .skill-item__link {
   display: -webkit-box;
@@ -311,12 +301,17 @@ button, input {
 
 .about {
   background-color: #e5e5e5;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .about__container {
   position: relative;
-  display: grid;
   padding-left: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 .about__content p:last-of-type {
   margin: 0;
@@ -345,13 +340,12 @@ button, input {
   -webkit-transition: background-color 0.5s, border-color 0.5s;
   -o-transition: background-color 0.5s, border-color 0.5s;
   transition: background-color 0.5s, border-color 0.5s;
-  letter-spacing: 0.15em;
   color: #ffffff;
   border: 2px solid rgba(45, 54, 81, 0);
   border-bottom-color: rgba(255, 255, 255, 0.25);
   background-color: rgba(255, 255, 255, 0.05);
   font-size: 1.125rem;
-  line-height: 1rem;
+  letter-spacing: 0.1em;
 }
 .form-item__input:hover, .form-item__input:focus {
   background-color: rgba(255, 255, 255, 0.15);
@@ -361,6 +355,7 @@ button, input {
 .form .btn--primary {
   width: 100%;
   color: #ffffff;
+  border-color: rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -434,14 +429,19 @@ button, input {
           justify-content: center;
   background-color: #2d3651;
   overflow: hidden;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .post-item__title {
-  display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
 }
 
@@ -450,6 +450,9 @@ button, input {
   -o-transition: color 0.5s;
   transition: color 0.5s;
   text-align: center;
+  font-size: 1.125rem;
+  letter-spacing: 0.0556em;
+  color: #637588;
 }
 
 .post-item__title p {
@@ -457,6 +460,7 @@ button, input {
   -o-transition: color 0.5s;
   transition: color 0.5s;
   text-align: center;
+  line-height: 1.25em;
 }
 
 .post-item:nth-of-type(1) {
@@ -945,6 +949,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .skill-item__title {
+    font-size: 1.25rem;
+  }
+
   .form__container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -957,31 +965,16 @@ a {
 
   h2 {
     font-size: 2.5rem;
-    letter-spacing: 0.1em;
-    line-height: 1.2em;
     margin-bottom: 3rem;
   }
 
-  h3 {
-    letter-spacing: 0.05em;
-  }
-
-  p {
-    letter-spacing: 0.05em;
-  }
-
-  p.about {
+  .about__content p {
     line-height: 1.5rem;
     font-size: 1.125rem;
   }
 
   .header-content__title {
     margin: 0 0 53px;
-  }
-
-  .btn--light {
-    font-size: 1rem;
-    letter-spacing: 0.05em;
   }
 
   .skills__container {
@@ -1004,7 +997,6 @@ a {
 
   .about__container {
     gap: 100px;
-    grid-template-columns: 1fr 270px;
   }
 
   .about__content p:first-of-type::after {
@@ -1054,8 +1046,6 @@ a {
   .btn--light {
     min-width: 200px;
     height: 50px;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
   }
 
   .skills__container {
@@ -1147,8 +1137,6 @@ a {
   .btn--light {
     min-width: 170px;
     height: 40px;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
   }
 
   .skills__container {
@@ -1260,8 +1248,6 @@ a {
   .btn--light {
     min-width: 170px;
     height: 40px;
-    font-size: 1rem;
-    letter-spacing: 0.05em;
   }
 
   .btn--primary {

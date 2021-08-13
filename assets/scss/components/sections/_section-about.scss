@@ -1,12 +1,13 @@
 .about {
   background-color: $color-gray-light;  
-  letter-spacing: 0.055em;
-  
+  letter-spacing: 0.0625rem;
+  display: flex;
+
  &__container {
   position: relative;
-  display: grid;
   padding-left: 20px;
-  
+  display: inline-flex;
+
   @extend %container;
   }
   

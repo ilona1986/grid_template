@@ -1,8 +1,7 @@
-
 .btn {
   height: 60px;
   font-size: 1.125rem;
-  letter-spacing: 0.111em;
+  letter-spacing: 0.1em;
   background-color: rgba($color-primary, 0.1);
   padding-left: 1em;
   padding-right: 1em;
@@ -27,8 +26,4 @@
   min-width: 350px;
   background-color: rgba($color-primary, 0.8); /*#2d3651*/
   border: 2px solid $color-primary;
-}
-
-button, input {
-  font-family: inherit;
 }
