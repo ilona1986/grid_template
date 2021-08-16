@@ -1,5 +1,12 @@
 @charset "UTF-8";
-.header-content__container, .header-menu__container, .about__container, .form__container, .posts__container, .footer__container {
+/* ul */
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
+/* xx */
+.footer__container, .posts__container, .form__container, .about__container, .header-menu__container, .header-content__container {
   max-width: 1340px;
   margin: auto;
   padding-right: 20px;
@@ -886,72 +893,16 @@ template {
 [hidden] {
   display: none;
 }
-
-.footer {
-  background-color: #2d3651;
-  text-align: center;
-  padding: 50px 20px 70px;
-}
-.footer__container {
-  padding-left: 20px;
-}
-.footer__media {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 40px;
-}
-.footer__media::after {
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 75px / 2);
-  width: 75px;
-  height: 2px;
-  content: "";
-  background-color: #ffffff;
-}
-.footer__media a {
-  display: block;
-  padding: 10px;
-}
-.footer__media a:hover, .footer__media a:focus {
-  color: #d66926;
-}
-.footer__media i {
-  font-size: 36px;
-}
-.footer__text span:nth-of-type(1) {
-  margin-right: -0.5em;
-  letter-spacing: 0.33em;
-  font-weight: 100;
-}
-.footer__text span:nth-of-type(2) {
-  letter-spacing: 0.05em;
-  color: #e5e5e5;
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
 @media (min-width: 576px) {
   .posts__actions .btn--primary, .skills__actions .btn--primary {
     min-width: 350px;
   }
 }
-
 @media (min-height: 691px) {
   .skills__container {
     grid-auto-rows: calc(33.3333vh - 13.3333px);
   }
 }
-
 @media (min-width: 768px) {
   .skill-item__title {
     font-size: 1.25rem;
@@ -961,7 +912,6 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (min-width: 992px) {
   h1 {
     font-size: 3.75rem;
@@ -1047,7 +997,6 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 @media (max-width: 991px) and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -1153,7 +1102,6 @@ a {
     margin-bottom: 2.625rem;
   }
 }
-
 @media (max-width: 767px) {
   h1 {
     font-size: 1.875rem;
@@ -1232,7 +1180,6 @@ a {
     line-height: 1.375rem;
   }
 }
-
 @media (max-width: 767px) and (min-width: 576px) {
   .form__container {
     grid-template-columns: repeat(2, 1fr);
@@ -1270,13 +1217,11 @@ a {
     font-size: 1.125em;
   }
 }
-
 @media (max-height: 690px) {
   .skills__container {
     grid-auto-rows: calc(230px - 13.3333px);
   }
 }
-
 @media (max-width: 575px) {
   h2 {
     text-align: center;

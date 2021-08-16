@@ -1,10 +1,13 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .form {
   background-color: $color-primary;
 
   &__container {
     display: grid;
-    gap: 20px;
-    padding-left: 20px;
+    gap: $gap;
+    padding-left: $gap;
     @extend %container;
   }
 

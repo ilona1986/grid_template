@@ -1,10 +1,14 @@
+@use "../../mixins" as *;
+@use "../../presets" as *;
+
+
 .about {
   background-color: $color-gray-light;
   letter-spacing: 0.0625rem;
 
   &__container {
     display: flex;
-    padding-left: 20px;
+    padding-left: $gap;
     @extend %container;
   }
 

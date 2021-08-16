@@ -1,11 +1,14 @@
+@use "../../mixins" as *;
+@use "../../presets" as *;
+
 .footer {
   background-color: $color-primary;
   text-align: center;
-  padding: 50px 20px 70px;
+  padding: 50px $gap 70px;
 
   &__container {
     @extend %container;
-    padding-left: 20px;
+    padding-left: $gap;
   }
 
   &__media {
@@ -16,7 +19,7 @@
   }
   &__media::after {
     position: absolute;
-    bottom: -20px;
+    bottom: -$gap;
     left: calc(50% - 75px / 2);
     width: 75px;
     height: 2px;

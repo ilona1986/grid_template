@@ -1,8 +1,11 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .header-logo {
   font-size: 1.5rem;
   letter-spacing: 0.22em;
   line-height: 0.833em;
-  padding: 20px;
+  padding: $gap;
 
   &__link {
     display: block;
