@@ -1,8 +1,10 @@
+@use "../presets" as *;
+@use "../mixins" as *;
 
 .btn {
   height: 60px;
-  font-size: 1.125rem;
-  letter-spacing: 0.111em;
+  font-size: 1.125rem; /*разрешение с 1980 до 768*/
+  letter-spacing: 0.1em; /*разрешение с 1980 до 768*/
   background-color: rgba($color-primary, 0.1);
   padding-left: 1em;
   padding-right: 1em;
@@ -13,7 +15,7 @@
 
   &:hover,
   &:focus {
-     background-color: $color-accent;
+    background-color: $color-accent;
   }
 }
 
@@ -24,7 +26,6 @@
 }
 
 .btn--primary {
-  // min-width: 350px;
   background-color: rgba($color-primary, 0.8); /*#2d3651*/
   border: 2px solid $color-primary;
 }

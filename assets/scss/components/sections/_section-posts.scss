@@ -1,21 +1,35 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .posts {
-&__container {
- 
-  padding-left: 20px;
-  @extend %container;
-}
+  @media (min-width: 992px) {  
+    padding-top: 100px;
+    padding-bottom: 100px; /*for about 60px*/
+  }
 
-&__images {
-  display: grid;
-  row-gap: 20px;
-  column-gap: 20px;
-  padding-bottom: 20px;
-}
+  &__container {
+    padding-left: $gap;
+    @extend %container;
+  }
 
-&__actions {
-  display: flex;
-  justify-content: center;
-} 
+  &__images {
+    display: grid;
+    row-gap: $gap;
+    column-gap: $gap;
+    padding-bottom: $gap;
+
+    @media (min-width: 992px) {  
+      grid-template-areas:
+          "p1 p1 p2 p3"
+          "p4 p5 p6 p6";
+      grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .post-item {
@@ -24,11 +38,11 @@
 }
 
 .post-item:hover {
-    background-color: #d8d8d8;
+  background-color: rgb(216, 216, 216);
 }
 
 .post-item:hover .post-item__image img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .post-item__link {
@@ -48,27 +62,30 @@
   justify-content: center;
   background-color: $color-primary;
   overflow: hidden;
-  align-content: center;
 }
 
 .post-item__title {
-  display: grid;
-  align-content: center;
-  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: $gap;
 }
 
 .post-item__title h3 {
   transition: color 0.5s;
   text-align: center;
+  font-size: 1.125rem;
+  letter-spacing: 0.0556em;
 }
+
 .post-item__title p {
   transition: color 0.5s;
   text-align: center;
-  // margin-top: 10px;
+  line-height: 1.25em;
 }
 
 @for $i from 1 through 6 {
-    .post-item:nth-of-type(#{$i}) {
-      grid-area: p#{$i};
-    }
+  .post-item:nth-of-type(#{$i}) {
+    grid-area: p#{$i};
+  }
 }

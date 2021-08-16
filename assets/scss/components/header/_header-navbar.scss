@@ -1,5 +1,8 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .header-navbar {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   &__btn {
     display: none;
   }
@@ -11,12 +14,12 @@
     display: grid;
     justify-content: end;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    gap: 20px;
+    gap: $gap;
   }
   
   &__link {
     // display: block;
-    padding: 20px 10px;
+    padding: $gap 10px;
     font-size: 1.125rem;
     transition: color 0.25s;
   }

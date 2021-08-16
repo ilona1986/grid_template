@@ -1,8 +1,20 @@
+@use "../../../presets" as *;
+@use "../../../mixins/" as *;
+
 .skills {
   padding: 10px;
-
+  
+  @media (min-width: 992px) {
+    margin-bottom: 30px;
+  }  
   &__container {
     display: grid;
+    @media (min-width: 992px) {
+      grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: $gap;
+    } 
   }
 
   &__actions {

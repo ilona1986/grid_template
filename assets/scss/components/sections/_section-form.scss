@@ -1,13 +1,19 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .form {
-  
   background-color: $color-primary;
 
-  &__container {
-  display: grid;
-  gap:20px;
-  padding-left: 20px;
+  @media (min-width: 992px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-  @extend %container;
+  &__container {
+    display: grid;
+    gap: $gap;
+    padding-left: $gap;
+    @extend %container;
   }
 
   &-item__input {
@@ -17,32 +23,39 @@
     padding-right: 30px;
     padding-left: 30px;
     transition: background-color 0.5s, border-color 0.5s;
-    letter-spacing: 0.15em;
     color: $color-light;
-    border: 2px solid rgba($color-light, 0);
+    border: 2px solid rgba($color-primary, 0);
     border-bottom-color: rgba($color-light, 0.25);
     background-color: rgba($color-light, 0.05);
-    font-size: 1.125rem;
-    line-height: 1rem;
-    letter-spacing: 0.125rem;
+
+    @media (min-width: 992px) {
+      font-size: 1.125rem;
+      letter-spacing: 0.1em;
+    }
   }
 
   &-item__input:hover,
   &-item__input:focus {
-      background-color: rgb($color-light, 0.15);
-      border: 2px solid $color-light;
-    }
+    background-color: rgb($color-light, 0.15);
+    border-color: rgba($color-primary, 0.15);
+    border-bottom-color: $color-light;
+  }
 
   .btn--primary {
     width: 100%;
     color: $color-light;
-    // border-color: rgba($color-light, 0);
+    border-color: rgba($color-light, 0);
     border-bottom-color: rgba($color-light, 0.2);
     background-color: rgba($color-light, 0.1);
-}
+  }
+
   .btn--primary:hover,
-   .btn--primary:focus {
+  .btn--primary:focus {
     background-color: $color-accent;
     border: 2px solid $color-light;
   }
+}
+
+input.form-item__input:focus-visible {
+  outline: none;
 }
