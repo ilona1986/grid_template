@@ -19,6 +19,17 @@
       gap: 100px;
       justify-content: flex-start;
     }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+      gap: $gap; 
+    }
+  }
+
+  @media (max-width: 767px) and (min-width: 576px) {
+    &__content {
+      justify-content: space-between;
+      width: 65%;
+    }
   }
 
   &__content p:last-of-type {
@@ -55,13 +66,19 @@
     margin-right: auto;
 
     @media (min-width: 992px) {
-        width: 46.5%;
-        min-height: 488px;
-        min-width: 271px;
-      }
+      width: 46.5%;
+      min-height: 488px;
+      min-width: 271px;
+    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+      width: 32.5%;
+      min-height: 425px;
+      min-width: 236px;
+    } 
   }
 
-  .about__image img {
+  &__image img {
     display: block;
     width: 100%;
   }

@@ -24,7 +24,15 @@
           "p4 p5 p6 p6";
       grid-template-columns: repeat(4, 1fr);
       }
-    }
+
+    @media (max-width: 767px) and (min-width: 576px) {
+      grid-template-areas:
+      "p1 p2"
+      "p3 p4"
+      "p5 p6";
+      grid-template-columns: 1fr 1fr;
+    }  
+  }
 
   &__actions {
     display: flex;
