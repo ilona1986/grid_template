@@ -276,40 +276,40 @@
     
   }
    
-  @media (max-width: 767px) and (min-width: 576px) {
-  .form__container {
-      grid-template-columns: repeat(2, 1fr);
-      .form-item:nth-of-type(1) {
-        grid-column: 1/span 2;
-    }
-  }
-  .about__content {
-    justify-content: space-between;
-  }
-  .about__container {
-    gap: $gap;
-  }
-   .about__content {
-    width: 65%;
-  }
-   .about__image {
-    width: 32.5%;
-    min-height: 425px;
-    min-width: 236px;
-   }
+  // @media (max-width: 767px) and (min-width: 576px) {
+  // .form__container {
+  //     grid-template-columns: repeat(2, 1fr);
+  //     .form-item:nth-of-type(1) {
+  //       grid-column: 1/span 2;
+  //   }
+  // }
+  // .about__content {
+  //   justify-content: space-between;
+  // }
+  // .about__container {
+  //   gap: $gap;
+  // }
+  //  .about__content {
+  //   width: 65%;
+  // }
+  //  .about__image {
+  //   width: 32.5%;
+  //   min-height: 425px;
+  //   min-width: 236px;
+  //  }
   
-   .posts__images {
-    grid-template-areas:
-        "p1 p2"
-        "p3 p4"
-        "p5 p6";
-    grid-template-columns: 1fr 1fr;
-  }
+  //  .posts__images {
+  //   grid-template-areas:
+  //       "p1 p2"
+  //       "p3 p4"
+  //       "p5 p6";
+  //   grid-template-columns: 1fr 1fr;
+  // }
   
-  h3.skill-item__title {
-    font-size: 1.125em;
-  }
-  }
+  // h3.skill-item__title {
+  //   font-size: 1.125em;
+  // }
+  // }
   
   @media (max-width:575px) {
     h2 {

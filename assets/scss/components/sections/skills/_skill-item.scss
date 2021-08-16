@@ -28,6 +28,10 @@
     margin: 0;
     // font-size: 1.25rem;
     letter-spacing: 0.1em;
+
+    @media (max-width: 767px) and (min-width: 576px) {
+      font-size: 1.125em;
+    } 
   }
 
   &__link {
