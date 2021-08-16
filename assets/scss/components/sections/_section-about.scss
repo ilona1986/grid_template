@@ -1,22 +1,23 @@
 .about {
-  background-color: $color-gray-light;  
+  background-color: $color-gray-light;
   letter-spacing: 0.0625rem;
-  display: flex;
 
- &__container {
-  position: relative;
-  padding-left: 20px;
-  display: inline-flex;
-
-  @extend %container;
+  &__container {
+    display: flex;
+    padding-left: 20px;
+    @extend %container;
   }
-  
+
   &__content p:last-of-type {
     margin: 0;
-}
+  }
+
   &__image {
-  display: grid;
-  align-content: center;
-  justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__image img {
+    display: block;
+    width: 100%;
   }
 }

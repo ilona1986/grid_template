@@ -2,10 +2,10 @@
   background-color: $color-primary;
 
   &__container {
-  display: grid;
-  gap:20px;
-  padding-left: 20px;
-  @extend %container;
+    display: grid;
+    gap: 20px;
+    padding-left: 20px;
+    @extend %container;
   }
 
   &-item__input {
@@ -19,15 +19,13 @@
     border: 2px solid rgba($color-primary, 0);
     border-bottom-color: rgba($color-light, 0.25);
     background-color: rgba($color-light, 0.05);
-    font-size: 1.125rem;
-    letter-spacing: 0.1em;
   }
 
   &-item__input:hover,
   &-item__input:focus {
-      background-color: rgb($color-light, 0.15);
-      border-color: rgba($color-primary, 0.15);
-      border-bottom-color: $color-light;
+    background-color: rgb($color-light, 0.15);
+    border-color: rgba($color-primary, 0.15);
+    border-bottom-color: $color-light;
   }
 
   .btn--primary {
@@ -37,9 +35,14 @@
     border-bottom-color: rgba($color-light, 0.2);
     background-color: rgba($color-light, 0.1);
   }
+
   .btn--primary:hover,
-   .btn--primary:focus {
+  .btn--primary:focus {
     background-color: $color-accent;
     border: 2px solid $color-light;
   }
+}
+
+input.form-item__input:focus-visible {
+  outline: none;
 }
