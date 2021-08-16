@@ -2,99 +2,101 @@
 @use "mixins" as *;
 
 
-@media (min-width: 992px) {
-    h1 {
-      font-size: 3.75rem;
-    }
-    h2 {
-      font-size: 2.5rem;
-      // letter-spacing: 0.1em;
-      // line-height: 1.2em;
-      margin-bottom: 3rem;
-    }
+// @media (min-width: 992px) {  
+// h1 {
+  //   font-size: 3.75rem;
+  // }
+  // h2 {
+    //   font-size: 2.5rem;
+    //   // letter-spacing: 0.1em;
+    //   // line-height: 1.2em;
+    //   margin-bottom: 3rem;
+    // }
     // h3 {
-    //   letter-spacing: 0.05em;
+      //   letter-spacing: 0.05em;
+      // }
+      // p {
+        //   letter-spacing: 0.05em;
+        //   line-height: 1.5rem;
+        //   font-size: 1.125rem;
+        // }
+        // .about__content p{
+          //   line-height: 1.5rem;
+          //   font-size: 1.125rem;
+          // }
+          // .about__container {
+            //   justify-content: flex-start;
+            // }
+            // .about__image {
+              //   width: 46.5%;
+              //   min-height: 488px;
+              //   min-width: 271px;
+              // }
+              //  .header-content__title {
+                //   margin: 0 0 53px;
+                // }
+                // .btn--light {
+                  //   font-size: 1rem;
+                  //   letter-spacing: 0.05em;
+                  // }
+                  
+                  // .skills__container {
+                    //   grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+                    //   grid-template-columns: repeat(4, 1fr);
+
+    //   gap: 10px;
+    //   margin-bottom: $gap;
+    // } 
+  
+    // .skills {
+    //   margin-bottom: 30px;
     // }
-    // p {
-    //   letter-spacing: 0.05em;
-    //   line-height: 1.5rem;
-    //   font-size: 1.125rem;
-    // }
-    .about__content p{
-      line-height: 1.5rem;
-      font-size: 1.125rem;
-    }
-    .about__container {
-      justify-content: flex-start;
-    }
-    .about__image {
-      width: 46.5%;
-      min-height: 488px;
-      min-width: 271px;
-    }
-     .header-content__title {
-      margin: 0 0 53px;
-    }
-    // .btn--light {
-    //   font-size: 1rem;
-    //   letter-spacing: 0.05em;
+  
+    //   .posts, 
+    // .about {
+    //   padding-top: 100px;
+    //   padding-bottom: 100px; /*for about 60px*/
     // }
   
-    .skills__container {
-      grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      margin-bottom: $gap;
-    } 
-  
-    .skills {
-      margin-bottom: 30px;
-    }
-  
-    .posts, 
-    .about {
-      padding-top: 100px;
-      padding-bottom: 100px; /*for about 60px*/
-    }
-  
-    .about__container {
-      gap: 100px;
-    }
+    // .about__container {
+    //   gap: 100px;
+    // }
     
-    .about__content p:first-of-type::after {
-      right: -55px;
-    }
+    // .about__content p:first-of-type::after {
+    //   right: -55px;
+    // }
   
-    .about__content p:first-of-type {
-      position: relative;
-    }
+    // .about__content p:first-of-type {
+    //   position: relative;
+    // }
   
-    .about__content p:first-of-type::after {
-      position: absolute;
-      top: 0;
-      width: 1px;
-      height: 200px;
-      background-color: rgb(112, 112, 112);
-      content: "";
-    }
+    // .about__content p:first-of-type::after {
+    //   position: absolute;
+    //   top: 0;
+    //   width: 1px;
+    //   height: 200px;
+    //   right: -55px;
+    //   background-color: rgb(112, 112, 112);
+    //   content: "";
+    // }
   
-    .form {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-    .form-item__input {
-      font-size: 1.125rem;
-      letter-spacing: 0.1em;
-    }
+    // .form {
+    //   padding-top: 30px;
+    //   padding-bottom: 30px;
+    // }
+    // .form-item__input {
+    //   font-size: 1.125rem;
+    //   letter-spacing: 0.1em;
+    // }
   
-    .posts__images {
-      grid-template-areas:
-          "p1 p1 p2 p3"
-          "p4 p5 p6 p6";
-      grid-template-columns: repeat(4, 1fr);
+    // .posts__images {
+    //   grid-template-areas:
+    //       "p1 p1 p2 p3"
+    //       "p4 p5 p6 p6";
+    //   grid-template-columns: repeat(4, 1fr);
   
-    }
-  }
+    // }
+  // }
   
   
   

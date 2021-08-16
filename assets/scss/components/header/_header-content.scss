@@ -15,4 +15,10 @@
   &__container {
     @extend %container;
   }
+
+  &__title {
+  @media (min-width: 992px) {
+    margin: 0 0 53px;
+    }  
+  }
 }

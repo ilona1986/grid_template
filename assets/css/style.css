@@ -125,6 +125,7 @@ img {
           justify-content: center;
   gap: 20px;
 }
+
 .header-menu {
   position: absolute;
   z-index: 2;
@@ -376,7 +377,6 @@ img {
 input.form-item__input:focus-visible {
   outline: none;
 }
-
 .posts__container {
   padding-left: 20px;
 }
@@ -916,82 +916,67 @@ template {
   h1 {
     font-size: 3.75rem;
   }
-
   h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-
-  .about__content p {
-    line-height: 1.5rem;
-    font-size: 1.125rem;
-  }
-
-  .about__container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-
-  .about__image {
-    width: 46.5%;
-    min-height: 488px;
-    min-width: 271px;
-  }
-
   .header-content__title {
     margin: 0 0 53px;
   }
-
+  .skills {
+    margin-bottom: 30px;
+  }
   .skills__container {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 20px;
   }
-
-  .skills {
-    margin-bottom: 30px;
-  }
-
-  .posts,
-.about {
+  .about {
     padding-top: 100px;
     padding-bottom: 100px;
     /*for about 60px*/
   }
-
   .about__container {
     gap: 100px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-
-  .about__content p:first-of-type::after {
-    right: -55px;
+  .about__content p {
+    line-height: 1.5rem;
+    font-size: 1.125rem;
   }
-
   .about__content p:first-of-type {
     position: relative;
   }
-
   .about__content p:first-of-type::after {
     position: absolute;
     top: 0;
     width: 1px;
     height: 200px;
+    right: -55px;
     background-color: #707070;
     content: "";
   }
-
+  .about__image {
+    width: 46.5%;
+    min-height: 488px;
+    min-width: 271px;
+  }
   .form {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
   .form-item__input {
     font-size: 1.125rem;
     letter-spacing: 0.1em;
   }
-
+  .posts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*for about 60px*/
+  }
   .posts__images {
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     grid-template-columns: repeat(4, 1fr);
