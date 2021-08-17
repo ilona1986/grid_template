@@ -5,10 +5,15 @@
   background-color: $color-gray-light;
   letter-spacing: 0.0625rem;
 
-  @media (min-width: 992px) {   
-      padding-top: 100px;
-      padding-bottom: 100px; /*for about 60px*/
-    }
+  @media (min-width: 992px) {
+    padding-top: 100px;
+    padding-bottom: 100px; /*for about 60px*/
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }   
 
   &__container {
     display: flex;
@@ -21,12 +26,17 @@
     }
 
     @media (max-width: 767px) and (min-width: 576px) {
-      gap: $gap; 
+      gap: $gap;
+    }
+
+    @media (max-width: 575px) {
+      gap: $gap;
+      flex-direction: column;
     }
   }
 
-  @media (max-width: 767px) and (min-width: 576px) {
-    &__content {
+  &__content {
+    @media (max-width: 767px) and (min-width: 576px) {
       justify-content: space-between;
       width: 65%;
     }
@@ -35,32 +45,54 @@
   &__content p:last-of-type {
     margin: 0;
   }
-  
-  &__content p{
-  @media (min-width: 992px) {
+
+  &__content p {
+    @media (min-width: 992px) {
       line-height: 1.5rem;
       font-size: 1.125rem;
     }
+
+    @media (max-width: 767px) {
+      line-height: 1.5rem;
+    } 
   }
 
   &__content p:first-of-type {
     @media (min-width: 992px) {
-    position: relative;
+      position: relative;
+    }
+
+    @media (max-width: 767px) {
+      position: relative;
     }
   }
 
   &__content p:first-of-type::after {
     @media (min-width: 992px) {
-    position: absolute;
-    top: 0;
-    width: 1px;
-    height: 200px;
-    right: -55px;
-    background-color: rgb(112, 112, 112);
-    content: "";
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 200px;
+      right: -55px;
+      background-color: rgb(112, 112, 112);
+      content: "";
+    }
+
+    @media (max-width: 767px) {
+      right: -10px;
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 200px;
+      background-color: rgb(112, 112, 112);
+      content: "";
+    } 
+
+    @media (max-width: 575px) {
+      display: none;
     }
   }
-  
+
   &__image {
     margin-left: auto;
     margin-right: auto;
@@ -75,7 +107,7 @@
       width: 32.5%;
       min-height: 425px;
       min-width: 236px;
-    } 
+    }
   }
 
   &__image img {

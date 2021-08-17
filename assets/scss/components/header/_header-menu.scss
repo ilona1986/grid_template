@@ -9,12 +9,18 @@
   right: 0;
 
   &__container {
-   
     display: grid;
     gap: $gap;
     align-items: center;
     grid-template-columns: auto 1fr;
-  
     @extend %container;
+
+    @media (max-width: 767px) {
+      background-color: rgb($color-gray-dark, 0.25);
+    }  
+
+    @media (max-width: 575px) {
+      background-color: rgb($color-gray-dark, 0.25);
+    }
   }
 }
