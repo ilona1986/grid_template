@@ -16,6 +16,10 @@
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     gap: $gap;
 
+    @media (max-width: 767px) {
+      display: none;
+    }  
+
     @media (max-width: 575px) {
       display: none;
     }

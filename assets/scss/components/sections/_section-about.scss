@@ -10,6 +10,11 @@
     padding-bottom: 100px; /*for about 60px*/
   }
 
+  @media (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }   
+
   &__container {
     display: flex;
     padding-left: $gap;
@@ -46,10 +51,18 @@
       line-height: 1.5rem;
       font-size: 1.125rem;
     }
+
+    @media (max-width: 767px) {
+      line-height: 1.5rem;
+    } 
   }
 
   &__content p:first-of-type {
     @media (min-width: 992px) {
+      position: relative;
+    }
+
+    @media (max-width: 767px) {
       position: relative;
     }
   }
@@ -64,6 +77,16 @@
       background-color: rgb(112, 112, 112);
       content: "";
     }
+
+    @media (max-width: 767px) {
+      right: -10px;
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 200px;
+      background-color: rgb(112, 112, 112);
+      content: "";
+    } 
 
     @media (max-width: 575px) {
       display: none;
