@@ -2,7 +2,7 @@
 @use "mixins" as *;
 
 
-// @media (min-width: 992px) {  
+// @media (min-width: 992px) {
 // h1 {
   //   font-size: 3.75rem;
   // }
@@ -39,37 +39,37 @@
                   //   font-size: 1rem;
                   //   letter-spacing: 0.05em;
                   // }
-                  
+
                   // .skills__container {
                     //   grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
                     //   grid-template-columns: repeat(4, 1fr);
 
     //   gap: 10px;
     //   margin-bottom: $gap;
-    // } 
-  
+    // }
+
     // .skills {
     //   margin-bottom: 30px;
     // }
-  
-    //   .posts, 
+
+    //   .posts,
     // .about {
     //   padding-top: 100px;
     //   padding-bottom: 100px; /*for about 60px*/
     // }
-  
+
     // .about__container {
     //   gap: 100px;
     // }
-    
+
     // .about__content p:first-of-type::after {
     //   right: -55px;
     // }
-  
+
     // .about__content p:first-of-type {
     //   position: relative;
     // }
-  
+
     // .about__content p:first-of-type::after {
     //   position: absolute;
     //   top: 0;
@@ -79,7 +79,7 @@
     //   background-color: rgb(112, 112, 112);
     //   content: "";
     // }
-  
+
     // .form {
     //   padding-top: 30px;
     //   padding-bottom: 30px;
@@ -88,48 +88,48 @@
     //   font-size: 1.125rem;
     //   letter-spacing: 0.1em;
     // }
-  
+
     // .posts__images {
     //   grid-template-areas:
     //       "p1 p1 p2 p3"
     //       "p4 p5 p6 p6";
     //   grid-template-columns: repeat(4, 1fr);
-  
+
     // }
   // }
-  
-  
-  
-  @media (max-width: 991px) and (min-width: 768px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-    h2 {
-      font-size: 2rem;
-      letter-spacing: 0.1em;
-      line-height: 1.2em;
-    }
-    .about__content  h2 {
-      margin-bottom: 2.2rem;
-    }
-    .header-content__title {
-      margin: 0 0 43px;
-    }
-    .btn--light {
-      min-width: 200px;
-      height: 50px;
-      // font-size: 1rem;
-      // letter-spacing: 0.05em;
-    }
-    .skills__container {
-      grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-bottom: $gap;
-    }  
-    .skills {
-      margin-bottom: 30px;
-    } 
+
+
+
+  // @media (max-width: 991px) and (min-width: 768px) {
+    // h1 {
+    //   font-size: 2.5rem;
+    // }
+    // h2 {
+    //   font-size: 2rem;
+    //   letter-spacing: 0.1em;
+    //   line-height: 1.2em;
+    // }
+    // .about__content  h2 {
+    //   margin-bottom: 2.2rem;
+    // }
+    // .header-content__title {
+    //   margin: 0 0 43px;
+    // }
+    // .btn--light {
+    //   min-width: 200px;
+    //   height: 50px;
+    //   // font-size: 1rem;
+    //   // letter-spacing: 0.05em;
+    // }
+    // .skills__container {
+    //   grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+    //   grid-template-columns: repeat(3, 1fr);
+    //   gap: 10px;
+    //   margin-bottom: $gap;
+    // }
+    // .skills {
+    //   margin-bottom: 30px;
+    // }
     // .skills__actions .btn--primary {
     //   min-width: 350px;
     //  }
@@ -138,67 +138,67 @@
       // padding-bottom: $gap;
       // 80px
     // }
-    .about__container {
-      align-items: flex-start;
-      gap: 40px;
-    }
-    .about__content {
-      width: 67%;
-    }
-    .about__image {
-      width: 27%;
-      min-height: 459px;
-      min-width: 256px;
-    }
-    .about__content {
-      justify-content: space-between;
-    }
-    .about__container p {
-      font-size: 1.125rem;
-      line-height: 1.334em;
-    }
-    .about__content p:first-of-type::after {
-      right: -$gap;
-    }
-    .about__content p:first-of-type {
-      position: relative;
-    }
-    .about__content p:first-of-type::after {
-      position: absolute;
-      top: 0;
-      width: 1px;
-      height: 200px;
-      background-color: #707070;
-      content: "";
-    }
-    .form {
-      padding-top: $gap;
-      padding-bottom: $gap;
-    }
-    input[type=text].form-item__input {
-      // font-size: 1rem;
-      // letter-spacing: 0.125em;
-      line-height: 1.5em;
-    }
-    .posts,
-    .about {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-    
-    .posts__images {
-      grid-template-areas:
-          "p1 p1 p2"
-          "p3 p4 p4"
-          "p5 p5 p6";
-      grid-template-columns: repeat(3, 1fr);
-      padding-top: 5px;
-    }
-    .posts__container h2 {
-      margin-bottom: 2.625rem;
-    }
-  }
-  
+    // .about__container {
+    //   align-items: flex-start;
+    //   gap: 40px;
+    // }
+    // .about__content {
+    //   width: 67%;
+    // }
+    // .about__image {
+    //   width: 27%;
+    //   min-height: 459px;
+    //   min-width: 256px;
+    // }
+    // .about__content {
+    //   justify-content: space-between;
+    // }
+    // .about__container p {
+    //   font-size: 1.125rem;
+    //   line-height: 1.334em;
+    // }
+    // .about__content p:first-of-type::after {
+    //   right: -$gap;
+    // }
+    // .about__content p:first-of-type {
+    //   position: relative;
+    // }
+    // .about__content p:first-of-type::after {
+    //   position: absolute;
+    //   top: 0;
+    //   width: 1px;
+    //   height: 200px;
+    //   background-color: #707070;
+    //   content: "";
+    // }
+    // .form {
+    //   padding-top: $gap;
+    //   padding-bottom: $gap;
+    // }
+    // input[type=text].form-item__input {
+    //   // font-size: 1rem;
+    //   // letter-spacing: 0.125em;
+    //   line-height: 1.5em;
+    // }
+    // .posts,
+    // .about {
+    //   padding-top: 80px;
+    //   padding-bottom: 80px;
+    // }
+
+    // .posts__images {
+    //   grid-template-areas:
+    //       "p1 p1 p2"
+    //       "p3 p4 p4"
+    //       "p5 p5 p6";
+    //   grid-template-columns: repeat(3, 1fr);
+    //   padding-top: 5px;
+    // }
+    // .posts__container h2 {
+    //   margin-bottom: 2.625rem;
+    // }
+  // }
+
   // @media (max-width: 767px) {
     // h1 {
     //   font-size: 1.875rem;
@@ -235,12 +235,12 @@
     // }
     // .skills__actions .btn--primary {
     //   min-width: 350px;
-    //  } 
+    //  }
     // .posts,
     // .about {
     //   padding-top: 60px;
     //   padding-bottom: 60px;
-    // }  
+    // }
     // .about__container {
     //   gap: $gap;
     //   grid-template-columns: 1fr 236px;
@@ -254,7 +254,7 @@
     // .about__content p:first-of-type {
     //   position: relative;
     // }
-  
+
     // .about__content p:first-of-type::after {
     //   position: absolute;
     //   top: 0;
@@ -263,7 +263,7 @@
     //   background-color: rgb(112, 112, 112);
     //   content: "";
     // }
-  
+
     // .form {
     //   padding-top: $gap;
     //   padding-bottom: $gap;
@@ -273,9 +273,9 @@
     //   letter-spacing: 0.125rem;
     //   line-height: 1.375rem;
     // }
-    
+
   // }
-   
+
   // @media (max-width: 767px) and (min-width: 576px) {
   // .form__container {
   //     grid-template-columns: repeat(2, 1fr);
@@ -297,7 +297,7 @@
   //   min-height: 425px;
   //   min-width: 236px;
   //  }
-  
+
   //  .posts__images {
   //   grid-template-areas:
   //       "p1 p2"
@@ -305,12 +305,12 @@
   //       "p5 p6";
   //   grid-template-columns: 1fr 1fr;
   // }
-  
+
   // h3.skill-item__title {
   //   font-size: 1.125em;
   // }
   // }
-  
+
 
 
   // @media (max-width:575px) {
@@ -347,24 +347,24 @@
     // }
     // .btn--primary {
     //   margin-top: 10px;
-      
+
     //   width: 100%;
     // }
     // .skills {
     //   margin-bottom: 10px;
-    // } 
+    // }
     // .skills__actions {
     //   margin-left: 10px;
     //   margin-right: 10px;
-    // } 
+    // }
     // .about__container {
     //   gap: $gap;
     //   flex-direction: column;
-    // } 
+    // }
     // .about__content p:first-of-type::after {
     //   display: none;
     // }
-    
+
     // .about__image {
       // margin-bottom: 10px;
       // margin-right: -35px;
@@ -372,7 +372,7 @@
     // .btn--primary {
     //   margin-top: 0;
     // }
-  
+
   //   .posts__images {
   //     grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
   //     grid-template-columns: 1fr;
@@ -388,22 +388,21 @@
   //     grid-template-columns: repeat(3, 1fr);
   //   }
   // }
-  
+
   // @media (min-height: 691px) {
   //   .skills__container {
   //     grid-auto-rows: calc(33.3333vh - 13.3333px);
   //   }
   // }
-  
+
   // @media (max-height: 690px) {
   //   .skills__container {
   //     grid-auto-rows: calc(230px - 13.3333px);
   //   }
   // }
-  
+
   // @media (min-width: 576px) {
   //   .posts__actions .btn--primary, .skills__actions .btn--primary {
   //     min-width: 350px;
   //   }
   //  }
-  

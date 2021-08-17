@@ -9,6 +9,11 @@
     padding-bottom: 30px;
   }
 
+  @media (max-width: 991px) and (min-width: 768px) {
+    padding-top: $gap;
+    padding-bottom: $gap;
+  }
+
   @media (max-width: 767px) {
     padding-top: $gap;
     padding-bottom: $gap;
@@ -51,7 +56,8 @@
   }
 
   &-item__input:hover,
-  &-item__input:focus {
+  &-item__input:focus,
+  &-item__input:active {
     background-color: rgb($color-light, 0.15);
     border-color: rgba($color-primary, 0.15);
     border-bottom-color: $color-light;
@@ -81,5 +87,9 @@ input[type="text"].form-item__input {
     font-size: 1.125rem;
     letter-spacing: 0.125rem;
     line-height: 1.375rem;
+  }
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    line-height: 1.5em;
   }
 }

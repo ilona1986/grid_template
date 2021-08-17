@@ -17,13 +17,17 @@ html {
 }
 
 h1 {
-  font-family: $font-header;  //"Roboto Slab", serif;
+  font-family: $font-header; //"Roboto Slab", serif;
   letter-spacing: 0.08em;
   text-align: center;
   font-weight: 300;
 
   @media (min-width: 992px) {
     font-size: 3.75rem;
+  }
+
+  @media (max-width: 991px) and (min-width: 768px) {
+    font-size: 2.5rem;
   }
 
   @media (max-width: 767px) {
@@ -39,17 +43,23 @@ h2 {
   line-height: 1.2em;
   letter-spacing: 0.1em;
 
-  @media (min-width: 992px)  {
+  @media (min-width: 992px) {
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
 
+  @media (max-width: 991px) and (min-width: 768px) {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+  }
+
   @media (max-width: 767px) {
     font-size: 1.5rem;
-    margin-bottom: 1.8rem;//2.25
-  }  
+    margin-bottom: 1.8rem; //2.25
+  }
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     text-align: center;
   }
 }

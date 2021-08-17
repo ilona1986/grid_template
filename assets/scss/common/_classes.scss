@@ -23,7 +23,7 @@
   min-width: 250px;
   background-color: rgba($color-light, 0.1);
   border: 2px solid $color-light;
-  
+
   @media (max-width: 767px) {
     min-width: 170px;
     height: 40px;
@@ -31,17 +31,22 @@
     letter-spacing: 0.125rem;
   }
 
+  @media (max-width: 991px) and (min-width: 768px) {
+    min-width: 200px;
+    height: 50px;
+  }
+
   // @media (max-width:575px) {
   //   min-width: 170px;
   //   height: 40px;
-  // } 
+  // }
 }
 
 .btn--primary {
   background-color: rgba($color-primary, 0.8); /*#2d3651*/
   border: 2px solid $color-primary;
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     width: 100%;
-  } 
+  }
 }
