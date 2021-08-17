@@ -15,8 +15,12 @@
     justify-content: end;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     gap: $gap;
+
+    @media (max-width: 575px) {
+      display: none;
+    }
   }
-  
+
   &__link {
     // display: block;
     padding: $gap 10px;

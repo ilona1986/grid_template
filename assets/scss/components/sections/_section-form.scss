@@ -21,6 +21,10 @@
           grid-column: 1/span 2;
       }
     }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    } 
   }
 
   &-item__input {
