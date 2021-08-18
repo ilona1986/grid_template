@@ -2,36 +2,116 @@
 @use "../../mixins" as *;
 
 .header-navbar {
-  letter-spacing: 0.1em;
+  font-size: 1.125rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin: -10px;
+
   &__btn {
-    display: none;
+    width: 30px;
+    height: 22.5px;
+    position: relative;
+    margin: $gap 10px $gap auto;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    @include md-min {
+      display: none;
+    }
+
+    &.active span {
+      &:nth-child(1) {
+        top: 9px;
+        width: 0%;
+        left: 50%;
+      }
+
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+
+      &:nth-child(4) {
+        top: 9px;
+        width: 0%;
+        left: 50%;
+      }
+    }
+
+    &-row {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: $color-light;
+      border-radius: 3px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 9px;
+      }
+
+      &:nth-child(4) {
+        top: 18px;
+      }
+    }
   }
 
   &__list {
-    margin: 0 -10px 0 0;
+    margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
-    justify-content: end;
-    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    gap: $gap;
 
-    @media (max-width: 767px) {
-      display: none;
-    }  
+    @include md-min {
+      display: grid;
+      justify-content: end;
+      grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+      gap: 20px;
+    }
 
-    @media (max-width: 575px) {
+    @include md {
       display: none;
+    }
+
+    &.active {
+      display: block;
+      background-color: rgba($color-gray-dark, 0.6);
+      position: absolute;
+      @include unlist;
+      @include box-shadow;
+
+      top: 100%;
+      right: 20px;
+    }
+  }
+
+  &__item {
+    @include md-min {
+      display: inline-block;
+    }
+    @include md {
+      margin: $gap $gap-sm;
+      padding: 10px;
     }
   }
 
   &__link {
-    // display: block;
-    padding: $gap 10px;
-    font-size: 1.125rem;
+    padding: 20px 10px;
     transition: color 0.25s;
   }
-
   &__link:hover,
   &__link:focus {
     color: $color-accent;
