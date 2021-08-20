@@ -5,63 +5,93 @@
   background-color: $color-gray-light;
   letter-spacing: 0.0625rem;
 
-  @media (min-width: 992px) {
+  @include lg-min {
     padding-top: 100px;
-    padding-bottom: 100px; /*for about 60px*/
+    padding-bottom: 100px;
   }
+  // @media (min-width: 992px) {
+  //    /*for about 60px*/
+  // }
 
-  @media (max-width: 991px) and (min-width: 768px) {
+  @include lg-md {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  // @media (max-width: 991px) and (min-width: 768px) {
 
-  @media (max-width: 767px) {
+  // }
+
+  @include md {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  // @media (max-width: 767px) {
+
+  // }
 
   &__container {
     display: flex;
     padding-left: $gap;
     @extend %container;
 
-    @media (min-width: 992px) {
+    @include lg-min {
       gap: 100px;
       justify-content: flex-start;
     }
+    // @media (min-width: 992px) {
 
-    @media (max-width: 991px) and (min-width: 768px) {
+    // }
+
+    @include lg-md {
       align-items: flex-start;
       gap: 40px;
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
 
-    @media (max-width: 767px) and (min-width: 576px) {
+    // }
+
+    @include md-sm {
       gap: $gap;
     }
+    // @media (max-width: 767px) and (min-width: 576px) {
 
-    @media (max-width: 575px) {
+    // }
+
+    @include sm {
       gap: $gap;
       flex-direction: column;
     }
+    // @media (max-width: 575px) {
+
+    // }
   }
 
   &__container p {
-    @media (max-width: 991px) and (min-width: 768px) {
+    @include lg-md {
       font-size: 1.125rem;
       line-height: 1.334em;
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
+
+    // }
   }
 
   &__content {
-    @media (max-width: 767px) and (min-width: 576px) {
+    @include md-sm {
       justify-content: space-between;
       width: 65%;
     }
+    // @media (max-width: 767px) and (min-width: 576px) {
 
-    @media (max-width: 991px) and (min-width: 768px) {
+    // }
+
+    @include lg-md {
       width: 67%;
       justify-content: space-between;
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
+
+    // }
   }
 
   &__content p:last-of-type {
@@ -69,41 +99,56 @@
   }
 
   &__content p {
-    @media (min-width: 992px) {
+    @include lg-min {
       line-height: 1.5rem;
       font-size: 1.125rem;
     }
+    // @media (min-width: 992px) {
 
-    @media (max-width: 991px) and (min-width: 768px) {
-    }
+    // }
 
-    @media (max-width: 767px) {
+    @include md {
       line-height: 1.5rem;
     }
+    // @media (max-width: 767px) {
+
+    // }
   }
 
   &__content h2 {
-    @media (max-width: 991px) and (min-width: 768px) {
+    @include lg-md {
       margin-bottom: 2.2rem;
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
+
+    // }
   }
 
   &__content p:first-of-type {
-    @media (min-width: 992px) {
+    @include lg-min {
       position: relative;
     }
+    // @media (min-width: 992px) {
 
-    @media (max-width: 991px) and (min-width: 768px) {
-      position: relative;
-    }
+    // }
 
-    @media (max-width: 767px) {
+    @include lg-md {
       position: relative;
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
+
+    // }
+
+    @include md {
+      position: relative;
+    }
+    // @media (max-width: 767px) {
+
+    // }
   }
 
   &__content p:first-of-type::after {
-    @media (min-width: 992px) {
+    @include lg-min {
       position: absolute;
       top: 0;
       width: 1px;
@@ -112,8 +157,11 @@
       background-color: rgb(112, 112, 112);
       content: "";
     }
+    // @media (min-width: 992px) {
 
-    @media (max-width: 991px) and (min-width: 768px) {
+    // }
+
+    @include lg-md {
       right: -$gap;
       position: absolute;
       top: 0;
@@ -122,8 +170,11 @@
       background-color: #707070;
       content: "";
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
 
-    @media (max-width: 767px) {
+    // }
+
+    @include md {
       right: -10px;
       position: absolute;
       top: 0;
@@ -132,33 +183,48 @@
       background-color: rgb(112, 112, 112);
       content: "";
     }
+    // @media (max-width: 767px) {
 
-    @media (max-width: 575px) {
+    // }
+
+    @include sm {
       display: none;
     }
+    // @media (max-width: 575px) {
+
+    // }
   }
 
   &__image {
     margin-left: auto;
     margin-right: auto;
 
-    @media (min-width: 992px) {
+    @include lg-min {
       width: 46.5%;
       min-height: 488px;
       min-width: 271px;
     }
+    // @media (min-width: 992px) {
 
-    @media (max-width: 991px) and (min-width: 768px) {
+    // }
+
+    @include lg-md {
       width: 27%;
       min-height: 459px;
       min-width: 256px;
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
 
-    @media (max-width: 767px) and (min-width: 576px) {
+    // }
+
+    @include md-sm {
       width: 32.5%;
       min-height: 425px;
       min-width: 236px;
     }
+    // @media (max-width: 767px) and (min-width: 576px) {
+
+    // }
   }
 
   &__image img {

@@ -2,20 +2,29 @@
 @use "../../mixins" as *;
 
 .posts {
-  @media (min-width: 992px) {
+  @include lg-min {
     padding-top: 100px;
-    padding-bottom: 100px; /*for about 60px*/
+    padding-bottom: 100px;
   }
+  // @media (min-width: 992px) {
+  //    /*for about 60px*/
+  // }
 
-  @media (max-width: 991px) and (min-width: 768px) {
+  @include lg-md {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  // @media (max-width: 991px) and (min-width: 768px) {
 
-  @media (max-width: 767px) {
+  // }
+
+  @include md {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  // @media (max-width: 767px) {
+
+  // }
 
   &__container {
     padding-left: $gap;
@@ -23,9 +32,12 @@
   }
 
   &__container h2 {
-    @media (max-width: 991px) and (min-width: 768px) {
+    @include lg-md {
       margin-bottom: 2.625rem;
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
+
+    // }
   }
 
   &__images {
@@ -34,14 +46,17 @@
     column-gap: $gap;
     padding-bottom: $gap;
 
-    @media (min-width: 992px) {
+    @include lg-min {
       grid-template-areas:
         "p1 p1 p2 p3"
         "p4 p5 p6 p6";
       grid-template-columns: repeat(4, 1fr);
     }
+    // @media (min-width: 992px) {
 
-    @media (max-width: 991px) and (min-width: 768px) {
+    // }
+
+    @include lg-md {
       grid-template-areas:
         "p1 p1 p2"
         "p3 p4 p4"
@@ -49,19 +64,28 @@
       grid-template-columns: repeat(3, 1fr);
       padding-top: 5px;
     }
+    // @media (max-width: 991px) and (min-width: 768px) {
 
-    @media (max-width: 767px) and (min-width: 576px) {
+    // }
+
+    @include md-sm {
       grid-template-areas:
         "p1 p2"
         "p3 p4"
         "p5 p6";
       grid-template-columns: 1fr 1fr;
     }
+    // @media (max-width: 767px) and (min-width: 576px) {
 
-    @media (max-width: 575px) {
+    // }
+
+    @include sm {
       grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
       grid-template-columns: 1fr;
     }
+    // @media (max-width: 575px) {
+      
+    // }
   }
 
   &__actions {
@@ -69,9 +93,12 @@
     justify-content: center;
 
     .btn--primary {
-      @media (min-width: 576px) {
+      @include sm-min {
         min-width: 350px;
       }
+      // @media (min-width: 576px) {
+        
+      // }
     }
   }
 }

@@ -3,13 +3,12 @@
 
 .skill-item {
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
   /* min-height: calc(33.3333vh - 13.3333px);*/
 
   &:hover {
-        
-   .skill-item__link {
-    color: $color-accent;
+    .skill-item__link {
+      color: $color-accent;
     }
 
     .skill-item__image {
@@ -28,13 +27,20 @@
     margin: 0;
     letter-spacing: 0.1em;
 
-    @media (max-width: 767px) and (min-width: 576px) {
+    @include md-sm {
       font-size: 1.125em;
-    } 
+    }
 
-    @media (min-width: 768px) {
+    // @media (max-width: 767px) and (min-width: 576px) {
+
+    // }
+
+    @include md-min {
       font-size: 1.25rem;
     }
+    // @media (min-width: 768px) {
+
+    // }
   }
 
   &__link {
@@ -54,12 +60,12 @@
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
-    }
+  }
 
   &__overlay {
     position: absolute;
     inset: 0;
-    background-color: $color-primary; 
+    background-color: $color-primary;
     opacity: 0.8;
     transition: opacity 0.5s;
   }
