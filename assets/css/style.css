@@ -1158,6 +1158,8 @@ template {
   }
   .header-menu__container {
     background-color: rgba(68, 89, 110, 0.25);
+    -webkit-box-shadow: -3px 3px 20px -10px black;
+            box-shadow: -3px 3px 20px -10px black;
   }
   .header-navbar__list {
     display: none;
