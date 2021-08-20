@@ -228,7 +228,6 @@ img {
 }
 .header-navbar__list.active {
   display: block;
-  background-color: rgba(68, 89, 110, 0.6);
   position: absolute;
   margin: 0;
   padding: 0;
@@ -1162,6 +1161,7 @@ template {
   }
   .header-navbar__list {
     display: none;
+    background-color: rgba(68, 89, 110, 0.9);
   }
   .header-navbar__item {
     margin: 20px 10px;

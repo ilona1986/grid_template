@@ -84,11 +84,11 @@
 
     @include md {
       display: none;
+      background-color: rgba(68, 89, 110, 0.9);
     }
 
     &.active {
       display: block;
-      background-color: rgba($color-gray-dark, 0.6);
       position: absolute;
       @include unlist;
       @include box-shadow;
@@ -101,7 +101,6 @@
   &__item {
     @include md-min {
       display: inline-block;
-      
     }
     @include md {
       margin: $gap $gap-sm;
@@ -112,7 +111,7 @@
 
   &__link {
     padding: 20px 10px;
-    transition: color 0.25s;    
+    transition: color 0.25s;
   }
   &__link:hover,
   &__link:focus {
