@@ -101,16 +101,18 @@
   &__item {
     @include md-min {
       display: inline-block;
+      
     }
     @include md {
       margin: $gap $gap-sm;
       padding: 10px;
+      text-align: right;
     }
   }
 
   &__link {
     padding: 20px 10px;
-    transition: color 0.25s;
+    transition: color 0.25s;    
   }
   &__link:hover,
   &__link:focus {

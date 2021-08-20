@@ -1166,6 +1166,7 @@ template {
   .header-navbar__item {
     margin: 20px 10px;
     padding: 10px;
+    text-align: right;
   }
   .skills {
     margin-bottom: 30px;
