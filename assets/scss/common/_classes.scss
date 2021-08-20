@@ -24,17 +24,22 @@
   background-color: rgba($color-light, 0.1);
   border: 2px solid $color-light;
 
-  @media (max-width: 767px) {
+  @include md {
     min-width: 170px;
     height: 40px;
     font-size: 1rem;
     letter-spacing: 0.125rem;
   }
+  // @media (max-width: 767px) {
+  // }
 
-  @media (max-width: 991px) and (min-width: 768px) {
+  @include lg-md {
     min-width: 200px;
     height: 50px;
   }
+  // @media (max-width: 991px) and (min-width: 768px) {
+
+  // }
 
   // @media (max-width:575px) {
   //   min-width: 170px;
@@ -46,7 +51,10 @@
   background-color: rgba($color-primary, 0.8); /*#2d3651*/
   border: 2px solid $color-primary;
 
-  @media (max-width: 575px) {
+  @include sm {
     width: 100%;
   }
+  // @media (max-width: 575px) {
+
+  // }
 }

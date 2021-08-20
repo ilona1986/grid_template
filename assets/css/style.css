@@ -1013,7 +1013,6 @@ template {
   .about {
     padding-top: 100px;
     padding-bottom: 100px;
-    /*for about 60px*/
   }
   .about__container {
     gap: 100px;
@@ -1053,14 +1052,13 @@ template {
   .posts {
     padding-top: 100px;
     padding-bottom: 100px;
-    /*for about 60px*/
   }
   .posts__images {
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991.8px) and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -1146,15 +1144,6 @@ template {
   }
 }
 @media (max-width: 767.8px) {
-  .header-navbar__list {
-    display: none;
-  }
-  .header-navbar__item {
-    margin: 20px 10px;
-    padding: 10px;
-  }
-}
-@media (max-width: 767px) {
   h1 {
     font-size: 1.875rem;
   }
@@ -1168,11 +1157,15 @@ template {
     font-size: 1rem;
     letter-spacing: 0.125rem;
   }
-  .header-content__title {
-    margin: 0 0 33px;
-  }
   .header-menu__container {
     background-color: rgba(68, 89, 110, 0.25);
+  }
+  .header-navbar__list {
+    display: none;
+  }
+  .header-navbar__item {
+    margin: 20px 10px;
+    padding: 10px;
   }
   .skills {
     margin-bottom: 30px;
@@ -1216,7 +1209,10 @@ template {
     padding-bottom: 60px;
   }
 }
-@media (max-width: 767px) and (min-width: 576px) {
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .header-content__title {
+    margin: 0 0 33px;
+  }
   .skill-item__title {
     font-size: 1.125em;
   }
@@ -1250,7 +1246,7 @@ template {
     grid-auto-rows: calc(230px - 13.3333px);
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 575.8px) {
   h2 {
     text-align: center;
   }

@@ -4,20 +4,29 @@
 .form {
   background-color: $color-primary;
 
-  @media (min-width: 992px) {
+  @include lg-min {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  // @media (min-width: 992px) {
 
-  @media (max-width: 991px) and (min-width: 768px) {
+  // }
+
+  @include lg-md {
     padding-top: $gap;
     padding-bottom: $gap;
   }
+  // @media (max-width: 991px) and (min-width: 768px) {
 
-  @media (max-width: 767px) {
+  // }
+
+  @include md {
     padding-top: $gap;
     padding-bottom: $gap;
   }
+  // @media (max-width: 767px) {
+
+  // }
 
   &__container {
     display: grid;
@@ -25,16 +34,21 @@
     padding-left: $gap;
     @extend %container;
 
-    @media (max-width: 767px) and (min-width: 576px) {
+    @include md-sm {
       grid-template-columns: repeat(2, 1fr);
       .form-item:nth-of-type(1) {
         grid-column: 1 / span 2;
       }
     }
+    // @media (max-width: 767px) and (min-width: 576px) {
 
-    @media (min-width: 768px) {
+    // }
+
+    @include md-min {
       grid-template-columns: repeat(3, 1fr);
     }
+    // @media (min-width: 768px) {
+    // }
   }
 
   &-item__input {
@@ -49,10 +63,13 @@
     border-bottom-color: rgba($color-light, 0.25);
     background-color: rgba($color-light, 0.05);
 
-    @media (min-width: 992px) {
+    @include lg-min {
       font-size: 1.125rem;
       letter-spacing: 0.1em;
     }
+    // @media (min-width: 992px) {
+
+    // }
   }
 
   &-item__input:hover,
@@ -83,13 +100,19 @@ input.form-item__input:focus-visible {
 }
 
 input[type="text"].form-item__input {
-  @media (max-width: 767px) {
+  @include md {
     font-size: 1.125rem;
     letter-spacing: 0.125rem;
     line-height: 1.375rem;
   }
+  // @media (max-width: 767px) {
 
-  @media (max-width: 991px) and (min-width: 768px) {
+  // }
+
+  @include lg-md {
     line-height: 1.5em;
   }
+  // @media (max-width: 991px) and (min-width: 768px) {
+
+  // }
 }

@@ -15,12 +15,17 @@
     grid-template-columns: auto 1fr;
     @extend %container;
 
-    @media (max-width: 767px) {
-      background-color: rgb($color-gray-dark, 0.25);
-    }  
-
-    @media (max-width: 575px) {
+    @include md {
       background-color: rgb($color-gray-dark, 0.25);
     }
+    // @media (max-width: 767px) {
+    // }
+
+    @include sm {
+      background-color: rgb($color-gray-dark, 0.25);
+    }
+    //   @media (max-width: 575px) {
+    //   }
+    // }
   }
 }
