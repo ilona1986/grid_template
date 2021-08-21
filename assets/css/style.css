@@ -588,7 +588,7 @@ input.form-item__input:focus-visible {
   width: 75px;
   height: 2px;
   content: "";
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer__media a {
   display: block;
@@ -1034,10 +1034,10 @@ template {
   .about__content p:first-of-type::after {
     position: absolute;
     top: 0;
-    width: 1px;
+    width: 2px;
     height: 200px;
     right: -55px;
-    background-color: #707070;
+    background-color: rgba(112, 112, 112, 0.1);
     content: "";
   }
   .about__image {
@@ -1117,9 +1117,9 @@ template {
     right: -20px;
     position: absolute;
     top: 0;
-    width: 1px;
+    width: 2px;
     height: 200px;
-    background-color: #707070;
+    background-color: rgba(112, 112, 112, 0.1);
     content: "";
   }
   .about__image {
@@ -1198,9 +1198,9 @@ template {
     right: -10px;
     position: absolute;
     top: 0;
-    width: 1px;
+    width: 2px;
     height: 200px;
-    background-color: #707070;
+    background-color: rgba(112, 112, 112, 0.1);
     content: "";
   }
   .form {
