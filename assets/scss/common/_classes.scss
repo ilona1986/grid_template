@@ -28,8 +28,12 @@
     min-width: 170px;
     height: 40px;
     font-size: 1rem;
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.05em;
   }
+
+  // @include md-sm {
+  //   letter-spacing: 0.125rem;
+  // }
   // @media (max-width: 767px) {
   // }
 
@@ -40,7 +44,9 @@
   // @media (max-width: 991px) and (min-width: 768px) {
 
   // }
-
+  // @include sm {
+  //   letter-spacing: 0.05em;
+  // }
   // @media (max-width:575px) {
   //   min-width: 170px;
   //   height: 40px;
