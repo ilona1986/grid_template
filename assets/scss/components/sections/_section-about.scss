@@ -3,7 +3,7 @@
 
 .about {
   background-color: $color-gray-light;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 0.055rem;
 
   @include lg-min {
     padding-top: 100px;
@@ -99,6 +99,10 @@
   }
 
   &__content p {
+    font-weight: 400;
+    position: relative;
+    // line-height: 1.15;
+
     @include lg-min {
       line-height: 1.5rem;
       font-size: 1.125rem;

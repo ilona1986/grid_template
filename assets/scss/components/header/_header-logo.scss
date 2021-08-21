@@ -4,16 +4,18 @@
 .header-logo {
   font-size: 1.5rem;
   letter-spacing: 0.22em;
-  line-height: 0.833em;
+  // line-height: 1.25rem;
+  // ont-weight: 400;f
   padding: $gap;
 
   &__link {
     display: block;
-  } 
+
+  }
 
   &__accent {
     display: inline-block;
-    padding: 16px 1px 14px 4px;
+    padding: 14px 1px 13px 4px;
     border: 3px solid $color-highlight;
     margin-right: 4px;
   }

@@ -109,6 +109,7 @@ img {
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
+  position: relative;
 }
 
 .header-content {
@@ -145,7 +146,6 @@ img {
 .header-logo {
   font-size: 1.5rem;
   letter-spacing: 0.22em;
-  line-height: 0.833em;
   padding: 20px;
 }
 .header-logo__link {
@@ -153,7 +153,7 @@ img {
 }
 .header-logo__accent {
   display: inline-block;
-  padding: 16px 1px 14px 4px;
+  padding: 14px 1px 13px 4px;
   border: 3px solid #d53d27;
   margin-right: 4px;
 }
@@ -374,7 +374,7 @@ img {
 
 .about {
   background-color: #e5e5e5;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 0.055rem;
 }
 .about__container {
   display: -webkit-box;
@@ -384,6 +384,10 @@ img {
 }
 .about__content p:last-of-type {
   margin: 0;
+}
+.about__content p {
+  font-weight: 400;
+  position: relative;
 }
 .about__image {
   margin-left: auto;
@@ -420,6 +424,7 @@ img {
   background-color: rgba(255, 255, 255, 0.15);
   border-color: rgba(45, 54, 81, 0.15);
   border-bottom-color: #ffffff;
+  font-style: inherit;
 }
 .form .btn--primary {
   width: 100%;
