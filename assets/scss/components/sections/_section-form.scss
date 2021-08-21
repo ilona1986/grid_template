@@ -3,30 +3,8 @@
 
 .form {
   background-color: $color-primary;
-
-  @include lg-min {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  // @media (min-width: 992px) {
-
-  // }
-
-  @include lg-md {
-    padding-top: $gap;
-    padding-bottom: $gap;
-  }
-  // @media (max-width: 991px) and (min-width: 768px) {
-
-  // }
-
-  @include md {
-    padding-top: $gap;
-    padding-bottom: $gap;
-  }
-  // @media (max-width: 767px) {
-
-  // }
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   &__container {
     display: grid;
@@ -40,15 +18,10 @@
         grid-column: 1 / span 2;
       }
     }
-    // @media (max-width: 767px) and (min-width: 576px) {
-
-    // }
 
     @include md-min {
       grid-template-columns: repeat(3, 1fr);
     }
-    // @media (min-width: 768px) {
-    // }
   }
 
   &-item__input {
@@ -62,23 +35,15 @@
     border: 2px solid rgba($color-primary, 0);
     border-bottom-color: rgba($color-light, 0.25);
     background-color: rgba($color-light, 0.05);
-
-    @include lg-min {
-      font-size: 1.125rem;
-      letter-spacing: 0.1em;
-    }
-    // @media (min-width: 992px) {
-
-    // }
+    font-size: 1.125rem;
+    letter-spacing: 0.15em;
   }
 
   &-item__input:hover,
-  &-item__input:focus,
-  &-item__input:active {
+  &-item__input:focus {
     background-color: rgb($color-light, 0.15);
-    border-color: rgba($color-primary, 0.15);
+    border-color: rgba($color-light, 0.15);
     border-bottom-color: $color-light;
-    font-style: inherit;
   }
 
   .btn--primary {
@@ -96,24 +61,13 @@
   }
 }
 
-input.form-item__input:focus-visible {
-  outline: none;
+input[type="text"].form-item__input:focus::-webkit-input-placeholder,
+input[type="text"].form-item__input:hover::-webkit-input-placeholder {
+  color: $color-light;
+  opacity: 0.4;
+  transition: 0.5s;
 }
 
-input[type="text"].form-item__input {
-  @include md {
-    font-size: 1.125rem;
-    letter-spacing: 0.125rem;
-    line-height: 1.375rem;
-  }
-  // @media (max-width: 767px) {
-
-  // }
-
-  @include lg-md {
-    line-height: 1.5em;
-  }
-  // @media (max-width: 991px) and (min-width: 768px) {
-
-  // }
+input.form-item__input:focus-visible {
+  outline: none;
 }
