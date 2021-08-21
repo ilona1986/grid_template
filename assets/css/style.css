@@ -20,7 +20,6 @@
 }
 
 html {
-  margin: 0;
   font-family: "Roboto", sans-serif;
   color: #637588;
   font-size: 16px;
@@ -32,7 +31,6 @@ h1 {
   letter-spacing: 0.08em;
   text-align: center;
   font-weight: 300;
-  line-height: 2.25rem;
 }
 
 h2 {
@@ -64,9 +62,9 @@ img {
 .btn {
   height: 60px;
   font-size: 1.125rem;
-  /*разрешение с 1980 до 768*/
+  /*разрешение с 1980 до 768 или 991 btnLight*/
   letter-spacing: 0.1em;
-  /*разрешение с 1980 до 768*/
+  /*разрешение с 1980 до 768 -/-*/
   background-color: rgba(45, 54, 81, 0.1);
   padding-left: 1em;
   padding-right: 1em;
@@ -553,6 +551,7 @@ input.form-item__input:focus-visible {
   text-align: center;
   font-size: 1.125rem;
   letter-spacing: 0.0556em;
+  font-family: "Roboto Slab", serif;
 }
 
 .post-item__title p {
@@ -560,7 +559,6 @@ input.form-item__input:focus-visible {
   -o-transition: color 0.5s;
   transition: color 0.5s;
   text-align: center;
-  line-height: 1.25em;
 }
 
 .post-item:nth-of-type(1) {
@@ -1060,7 +1058,7 @@ template {
     top: 0;
     width: 2px;
     height: 200px;
-    right: -55px;
+    right: -50px;
     background-color: rgba(112, 112, 112, 0.1);
     content: "";
   }
@@ -1091,6 +1089,7 @@ template {
   .btn--light {
     min-width: 200px;
     height: 50px;
+    font-size: 1rem;
   }
   .header-content__title {
     margin: 0 0 43px;
@@ -1154,7 +1153,6 @@ template {
   .posts__images {
     grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 5px;
   }
 }
 @media (max-width: 767.8px) {

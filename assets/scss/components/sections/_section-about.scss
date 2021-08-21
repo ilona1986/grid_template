@@ -109,7 +109,7 @@
       top: 0;
       width: 2px;
       height: 200px;
-      right: -55px;
+      right: -50px;
       background-color: rgb(112, 112, 112, 0.1);
       content: "";
     }
@@ -164,10 +164,6 @@
       min-height: 425px;
       min-width: 236px;
     }
-
-    // @include sm {
-    //   max-height: 480px;
-    // }
   }
 
   &__image img {
