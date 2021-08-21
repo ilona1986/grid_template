@@ -78,6 +78,7 @@
     background-color: rgb($color-light, 0.15);
     border-color: rgba($color-primary, 0.15);
     border-bottom-color: $color-light;
+    font-style: inherit;
   }
 
   .btn--primary {
