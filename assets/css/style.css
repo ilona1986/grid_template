@@ -20,7 +20,6 @@
 }
 
 html {
-  margin: 0;
   font-family: "Roboto", sans-serif;
   color: #637588;
   font-size: 16px;
@@ -63,9 +62,9 @@ img {
 .btn {
   height: 60px;
   font-size: 1.125rem;
-  /*разрешение с 1980 до 768*/
+  /*разрешение с 1980 до 768 или 991 btnLight*/
   letter-spacing: 0.1em;
-  /*разрешение с 1980 до 768*/
+  /*разрешение с 1980 до 768 -/-*/
   background-color: rgba(45, 54, 81, 0.1);
   padding-left: 1em;
   padding-right: 1em;
@@ -115,7 +114,6 @@ img {
 .header-content {
   position: relative;
   z-index: 1;
-  padding-left: 20px;
 }
 .header-content__actions {
   display: -webkit-box;
@@ -125,6 +123,9 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+}
+.header-content__container {
+  padding-left: 20px;
 }
 
 .header-menu {
@@ -386,20 +387,31 @@ img {
   margin: 0;
 }
 .about__content p {
-  font-weight: 400;
   position: relative;
 }
 .about__image {
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .about__image img {
+  display: block;
   max-width: 100%;
   max-height: 480px;
 }
 
 .form {
   background-color: #2d3651;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .form__container {
   display: grid;
@@ -419,12 +431,13 @@ img {
   border: 2px solid rgba(45, 54, 81, 0);
   border-bottom-color: rgba(255, 255, 255, 0.25);
   background-color: rgba(255, 255, 255, 0.05);
+  font-size: 1.125rem;
+  letter-spacing: 0.15em;
 }
-.form-item__input:hover, .form-item__input:focus, .form-item__input:active {
+.form-item__input:hover, .form-item__input:focus {
   background-color: rgba(255, 255, 255, 0.15);
-  border-color: rgba(45, 54, 81, 0.15);
+  border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
-  font-style: inherit;
 }
 .form .btn--primary {
   width: 100%;
@@ -437,6 +450,14 @@ img {
 .form .btn--primary:focus {
   background-color: #d66926;
   border: 2px solid #ffffff;
+}
+
+input[type=text].form-item__input:focus::-webkit-input-placeholder,
+input[type=text].form-item__input:hover::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 input.form-item__input:focus-visible {
@@ -529,6 +550,7 @@ input.form-item__input:focus-visible {
   text-align: center;
   font-size: 1.125rem;
   letter-spacing: 0.0556em;
+  font-family: "Roboto Slab", serif;
 }
 
 .post-item__title p {
@@ -536,7 +558,6 @@ input.form-item__input:focus-visible {
   -o-transition: color 0.5s;
   transition: color 0.5s;
   text-align: center;
-  line-height: 1.25em;
 }
 
 .post-item:nth-of-type(1) {
@@ -588,7 +609,7 @@ input.form-item__input:focus-visible {
   width: 75px;
   height: 2px;
   content: "";
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer__media a {
   display: block;
@@ -1034,24 +1055,17 @@ template {
   .about__content p:first-of-type::after {
     position: absolute;
     top: 0;
-    width: 1px;
+    width: 2px;
     height: 200px;
-    right: -55px;
-    background-color: #707070;
+    right: -50px;
+    background-color: rgba(112, 112, 112, 0.1);
     content: "";
   }
   .about__image {
     width: 46.5%;
-    min-height: 488px;
+    max-height: 480px;
+    /*488*/
     min-width: 271px;
-  }
-  .form {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .form-item__input {
-    font-size: 1.125rem;
-    letter-spacing: 0.1em;
   }
   .posts {
     padding-top: 100px;
@@ -1079,6 +1093,7 @@ template {
   .btn--light {
     min-width: 200px;
     height: 50px;
+    font-size: 1rem;
   }
   .header-content__title {
     margin: 0 0 43px;
@@ -1102,10 +1117,6 @@ template {
             align-items: flex-start;
     gap: 40px;
   }
-  .about__container p {
-    font-size: 1.125rem;
-    line-height: 1.334em;
-  }
   .about__content {
     width: 67%;
     -webkit-box-pack: justify;
@@ -1123,22 +1134,15 @@ template {
     right: -20px;
     position: absolute;
     top: 0;
-    width: 1px;
+    width: 2px;
     height: 200px;
-    background-color: #707070;
+    background-color: rgba(112, 112, 112, 0.1);
     content: "";
   }
   .about__image {
     width: 27%;
-    min-height: 459px;
-    min-width: 256px;
-  }
-  .form {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  input[type=text].form-item__input {
-    line-height: 1.5em;
+    min-height: 480px;
+    min-width: 267px;
   }
   .posts {
     padding-top: 80px;
@@ -1150,7 +1154,6 @@ template {
   .posts__images {
     grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 5px;
   }
 }
 @media (max-width: 767.8px) {
@@ -1165,7 +1168,10 @@ template {
     min-width: 170px;
     height: 40px;
     font-size: 1rem;
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.05em;
+  }
+  .header-content__title {
+    margin: 0 0 33px;
   }
   .header-menu__container {
     background-color: rgba(68, 89, 110, 0.25);
@@ -1194,36 +1200,28 @@ template {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .about__content p {
-    font-size: 1rem;
+
+  .about__content p:first-of-type {
+    position: relative;
   }
-  .about__content p:first-of-type::after {
+    .about__content p:first-of-type::after {
     right: -10px;
     position: absolute;
     top: 0;
-    width: 1px;
+    width: 2px;
     height: 200px;
-    background-color: #707070;
+    background-color: rgba(112, 112, 112, 0.1);
     content: "";
-  }
-  .form {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  input[type=text].form-item__input {
-    font-size: 1.125rem;
-    letter-spacing: 0.125rem;
-    line-height: 1.375rem;
   }
   .posts {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .posts__container h2 {
+    margin-bottom: 2.25rem;
+  }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
-  .header-content__title {
-    margin: 0 0 33px;
-  }
   .skill-item__title {
     font-size: 1.125em;
   }

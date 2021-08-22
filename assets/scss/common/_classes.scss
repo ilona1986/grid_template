@@ -3,8 +3,8 @@
 
 .btn {
   height: 60px;
-  font-size: 1.125rem; /*разрешение с 1980 до 768*/
-  letter-spacing: 0.1em; /*разрешение с 1980 до 768*/
+  font-size: 1.125rem; /*разрешение с 1980 до 768 или 991 btnLight*/
+  letter-spacing: 0.1em; /*разрешение с 1980 до 768 -/-*/
   background-color: rgba($color-primary, 0.1);
   padding-left: 1em;
   padding-right: 1em;
@@ -28,23 +28,14 @@
     min-width: 170px;
     height: 40px;
     font-size: 1rem;
-    letter-spacing: 0.125rem;
+    letter-spacing: 0.05em;
   }
-  // @media (max-width: 767px) {
-  // }
 
   @include lg-md {
     min-width: 200px;
     height: 50px;
+    font-size: 1rem;
   }
-  // @media (max-width: 991px) and (min-width: 768px) {
-
-  // }
-
-  // @media (max-width:575px) {
-  //   min-width: 170px;
-  //   height: 40px;
-  // }
 }
 
 .btn--primary {
@@ -54,7 +45,4 @@
   @include sm {
     width: 100%;
   }
-  // @media (max-width: 575px) {
-
-  // }
 }
