@@ -31,6 +31,7 @@ h1 {
   letter-spacing: 0.08em;
   text-align: center;
   font-weight: 300;
+  line-height: 1.2em;
 }
 
 h2 {
@@ -1047,10 +1048,9 @@ template {
   }
   .about__content p {
     font-size: 1.125rem;
-    margin: 18px 0 18px 0;
   }
   .about__content p:first-of-type {
-    margin: -5px 0 18px 0;
+    position: relative;
   }
   .about__content p:first-of-type::after {
     position: absolute;
@@ -1078,7 +1078,7 @@ template {
 }
 @media (max-width: 991.8px) {
   .about__content p:first-of-type {
-    margin: -5px 0 16px 0;
+    position: relative;
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
@@ -1122,10 +1122,6 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .about__content p {
-    font-size: 1rem;
-    margin: 16px 0 16px 0;
   }
   .about__content h2 {
     margin-bottom: 2.2rem;
@@ -1200,11 +1196,10 @@ template {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
   .about__content p:first-of-type {
     position: relative;
   }
-    .about__content p:first-of-type::after {
+  .about__content p:first-of-type::after {
     right: -10px;
     position: absolute;
     top: 0;

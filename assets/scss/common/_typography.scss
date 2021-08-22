@@ -21,7 +21,7 @@ h1 {
   letter-spacing: 0.08em;
   text-align: center;
   font-weight: 300;
-  // line-height: 2.25rem; для хедера контент 
+  line-height: 1.2em;
 
   @include lg-min {
     font-size: 3.75rem;
