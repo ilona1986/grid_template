@@ -57,7 +57,7 @@
       justify-content: space-between;
       width: 65%;
     }
- 
+
     @include lg-md {
       width: 67%;
       justify-content: space-between;
@@ -71,16 +71,17 @@
   &__content p {
     // font-weight: 400;
     position: relative;
-    // line-height: 1.15;
 
     @include lg-min {
       // line-height: 1.5rem;
       font-size: 1.125rem;
+     // margin: 18px 0 18px 0;
     }
 
     // @include md {
     //   line-height: 1.5rem;
     // }
+
   }
 
   &__content h2 {
@@ -92,15 +93,18 @@
   &__content p:first-of-type {
     @include lg-min {
       position: relative;
+      //margin: -5px 0 18px 0;
     }
 
-    @include lg-md {
+    @include lg {
       position: relative;
+     // margin: -5px 0 16px 0;
     }
 
     @include md {
       position: relative;
     }
+
   }
 
   &__content p:first-of-type::after {
