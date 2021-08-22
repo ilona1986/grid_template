@@ -386,16 +386,16 @@ img {
   margin: 0;
 }
 .about__content p {
-  font-weight: 400;
-  position: relative;
+  line-height: 0.5rem;
+  font-size: 1.15rem;
 }
 .about__image {
   margin-left: auto;
   margin-right: auto;
 }
 .about__image img {
-  display: block;
-  width: 100%;
+  max-width: 100%;
+  max-height: 480px;
 }
 
 .form {
@@ -1028,9 +1028,6 @@ template {
     line-height: 1.5rem;
     font-size: 1.125rem;
   }
-  .about__content p:first-of-type {
-    position: relative;
-  }
   .about__content p:first-of-type::after {
     position: absolute;
     top: 0;
@@ -1109,9 +1106,6 @@ template {
   }
   .about__content h2 {
     margin-bottom: 2.2rem;
-  }
-  .about__content p:first-of-type {
-    position: relative;
   }
   .about__content p:first-of-type::after {
     right: -20px;
