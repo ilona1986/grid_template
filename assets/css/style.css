@@ -390,6 +390,9 @@ img {
 .about__content p {
   position: relative;
 }
+.about__content p:first-of-type {
+  position: relative;
+}
 .about__image {
   margin-left: auto;
   margin-right: auto;
@@ -1050,7 +1053,7 @@ template {
     font-size: 1.125rem;
   }
   .about__content p:first-of-type {
-    position: relative;
+    margin: -5px 0 18px 0;
   }
   .about__content p:first-of-type::after {
     position: absolute;
@@ -1078,7 +1081,7 @@ template {
 }
 @media (max-width: 991.8px) {
   .about__content p:first-of-type {
-    position: relative;
+    margin: -5px 0 16px 0;
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
@@ -1124,7 +1127,7 @@ template {
             justify-content: space-between;
   }
   .about__content h2 {
-    margin-bottom: 2.2rem;
+    margin-bottom: 2.625rem;
   }
   .about__content p:first-of-type::after {
     right: -20px;
@@ -1139,6 +1142,7 @@ template {
     width: 27%;
     min-height: 480px;
     min-width: 267px;
+    padding-top: 10px;
   }
   .posts {
     padding-top: 80px;
@@ -1158,7 +1162,6 @@ template {
   }
   h2 {
     font-size: 1.5rem;
-    margin-bottom: 1.8rem;
   }
   .btn--light {
     min-width: 170px;
@@ -1196,8 +1199,8 @@ template {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .about__content p:first-of-type {
-    position: relative;
+  .about__content h2 {
+    margin-bottom: 2.25rem;
   }
   .about__content p:first-of-type::after {
     right: -10px;
