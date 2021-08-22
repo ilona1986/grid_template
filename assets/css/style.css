@@ -601,7 +601,7 @@ input.form-item__input:focus-visible {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 .footer__media::after {
   position: absolute;
