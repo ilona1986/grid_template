@@ -601,7 +601,7 @@ input.form-item__input:focus-visible {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 .footer__media::after {
   position: absolute;
@@ -1217,6 +1217,9 @@ template {
   .posts {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .posts__container h2 {
+    margin-bottom: 2.25rem;
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
