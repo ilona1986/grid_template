@@ -387,7 +387,6 @@ img {
   margin: 0;
 }
 .about__content p {
-  font-weight: 400;
   position: relative;
 }
 .about__image {
@@ -1047,7 +1046,6 @@ template {
             justify-content: flex-start;
   }
   .about__content p {
-    line-height: 1.5rem;
     font-size: 1.125rem;
   }
   .about__content p:first-of-type {
@@ -1112,10 +1110,6 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 40px;
-  }
-  .about__container p {
-    font-size: 1.125rem;
-    line-height: 1.334em;
   }
   .about__content {
     width: 67%;
@@ -1198,9 +1192,6 @@ template {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  .about__content p {
-    line-height: 1.5rem;
   }
   .about__content p:first-of-type {
     position: relative;

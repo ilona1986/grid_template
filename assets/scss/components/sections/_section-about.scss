@@ -45,12 +45,12 @@
     }
   }
 
-  &__container p {
-    @include lg-md {
-      font-size: 1.125rem;
-      line-height: 1.334em;
-    }
-  }
+  // &__container p {
+  //   @include lg-md {
+  //     font-size: 1.125rem;
+  //     line-height: 1.334em;
+  //   }
+  // }
 
   &__content {
     @include md-sm {
@@ -69,18 +69,18 @@
   }
 
   &__content p {
-    font-weight: 400;
+    // font-weight: 400;
     position: relative;
     // line-height: 1.15;
 
     @include lg-min {
-      line-height: 1.5rem;
+      // line-height: 1.5rem;
       font-size: 1.125rem;
     }
 
-    @include md {
-      line-height: 1.5rem;
-    }
+    // @include md {
+    //   line-height: 1.5rem;
+    // }
   }
 
   &__content h2 {
