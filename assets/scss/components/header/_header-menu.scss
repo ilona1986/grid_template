@@ -19,15 +19,9 @@
       background-color: rgb($color-gray-dark, 0.25);
       @include box-shadow;
     }
-    // @media (max-width: 767px) {
-    // }
 
     @include sm {
       background-color: rgb($color-gray-dark, 0.25);
-      // @include box-shadow;
     }
-    //   @media (max-width: 575px) {
-    //   }
-    // }
   }
 }

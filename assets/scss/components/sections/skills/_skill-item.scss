@@ -31,16 +31,9 @@
       font-size: 1.125em;
     }
 
-    // @media (max-width: 767px) and (min-width: 576px) {
-
-    // }
-
     @include md-min {
       font-size: 1.25rem;
     }
-    // @media (min-width: 768px) {
-
-    // }
   }
 
   &__link {

@@ -45,13 +45,6 @@
     }
   }
 
-  // &__container p {
-  //   @include lg-md {
-  //     font-size: 1.125rem;
-  //     line-height: 1.334em;
-  //   }
-  // }
-
   &__content {
     @include md-sm {
       justify-content: space-between;
@@ -69,19 +62,11 @@
   }
 
   &__content p {
-    // font-weight: 400;
     position: relative;
 
     @include lg-min {
-      // line-height: 1.5rem;
       font-size: 1.125rem;
-     // margin: 18px 0 18px 0;
     }
-
-    // @include md {
-    //   line-height: 1.5rem;
-    // }
-
   }
 
   &__content h2 {
@@ -114,7 +99,7 @@
       background-color: rgb(112, 112, 112, 0.1);
       content: "";
     }
- 
+
     @include lg-md {
       right: -$gap;
       position: absolute;
@@ -124,7 +109,7 @@
       background-color: rgb(112, 112, 112, 0.1);
       content: "";
     }
-  
+
     @include md {
       right: -10px;
       position: absolute;
@@ -134,7 +119,7 @@
       background-color: rgb(112, 112, 112, 0.1);
       content: "";
     }
- 
+
     @include sm {
       display: none;
     }
@@ -147,20 +132,19 @@
     justify-content: center;
     display: flex;
 
-
     @include lg-min {
       width: 46.5%;
-      max-height: 480px;/*488*/
+      max-height: 480px; /*488*/
       min-width: 271px;
     }
-  
+
     @include lg-md {
       width: 27%;
       min-height: 480px;
       min-width: 267px;
       padding-top: 10px;
     }
-   
+
     @include md-sm {
       width: 32.5%;
       min-height: 425px;
