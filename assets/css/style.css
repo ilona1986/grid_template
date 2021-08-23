@@ -31,6 +31,7 @@ h1 {
   letter-spacing: 0.08em;
   text-align: center;
   font-weight: 300;
+  line-height: 1.2em;
 }
 
 h2 {
@@ -154,7 +155,7 @@ img {
 }
 .header-logo__accent {
   display: inline-block;
-  padding: 14px 1px 13px 4px;
+  padding: 14px 1px 13px 5px;
   border: 3px solid #d53d27;
   margin-right: 4px;
 }
@@ -387,6 +388,9 @@ img {
   margin: 0;
 }
 .about__content p {
+  position: relative;
+}
+.about__content p:first-of-type {
   position: relative;
 }
 .about__image {
@@ -1047,7 +1051,6 @@ template {
   }
   .about__content p {
     font-size: 1.125rem;
-    margin: 18px 0 18px 0;
   }
   .about__content p:first-of-type {
     margin: -5px 0 18px 0;
@@ -1123,12 +1126,8 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .about__content p {
-    font-size: 1rem;
-    margin: 16px 0 16px 0;
-  }
   .about__content h2 {
-    margin-bottom: 2.2rem;
+    margin-bottom: 2.625rem;
   }
   .about__content p:first-of-type::after {
     right: -20px;
@@ -1143,6 +1142,7 @@ template {
     width: 27%;
     min-height: 480px;
     min-width: 267px;
+    padding-top: 10px;
   }
   .posts {
     padding-top: 80px;
@@ -1162,7 +1162,6 @@ template {
   }
   h2 {
     font-size: 1.5rem;
-    margin-bottom: 1.8rem;
   }
   .btn--light {
     min-width: 170px;
@@ -1200,11 +1199,10 @@ template {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
-  .about__content p:first-of-type {
-    position: relative;
+  .about__content h2 {
+    margin-bottom: 2.25rem;
   }
-    .about__content p:first-of-type::after {
+  .about__content p:first-of-type::after {
     right: -10px;
     position: absolute;
     top: 0;
