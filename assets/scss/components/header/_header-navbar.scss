@@ -16,7 +16,7 @@
     margin: $gap 10px $gap auto;
     transition: 0.5s ease-in-out;
     cursor: pointer;
-    
+
     @include md-min {
       display: none;
     }

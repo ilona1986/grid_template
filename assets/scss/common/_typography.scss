@@ -8,12 +8,10 @@
 }
 
 html {
-  // margin: 0;
   font-family: $font-main; //"Roboto", sans-serif;
   color: $color-gray;
   font-size: 16px;
   overflow-y: scroll;
-  // letter-spacing: 0.1em;  для текста картиноках в постах
 }
 
 h1 {
@@ -26,22 +24,14 @@ h1 {
   @include lg-min {
     font-size: 3.75rem;
   }
-  // @media (min-width: 992px) {
-
-  // }
 
   @include lg-md {
     font-size: 2.5rem;
   }
-  // @media (max-width: 991px) and (min-width: 768px) {
-  // }
 
   @include md {
     font-size: 1.875rem;
   }
-  // @media (max-width: 767px) {
-
-  // }
 }
 
 h2 {
@@ -56,38 +46,24 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
   }
-  // @media (min-width: 992px) {
-  // }
 
   @include lg-md {
     font-size: 2rem;
     letter-spacing: 0.1em;
     line-height: 1.2em;
   }
-  // @media (max-width: 991px) and (min-width: 768px) {
-  // }
 
   @include md {
     font-size: 1.5rem;
-    // margin-bottom: 1.8rem;for lamp
   }
-  // @media (max-width: 767px) {
-  //    //2.25
-  // }
 
   @include sm {
     text-align: center;
   }
-  // @media (max-width: 575px) {
-
-  // }
 }
 
 h3 {
-  // font-family: "Roboto Slab", serif;
   color: $color-gray;
-  // font-size: 1.125rem;
-  // letter-spacing: 0.05em;
 }
 
 a {

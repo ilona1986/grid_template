@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ul */
 /* xl */
 /* lg */
@@ -63,9 +62,7 @@ img {
 .btn {
   height: 60px;
   font-size: 1.125rem;
-  /*разрешение с 1980 до 768 или 991 btnLight*/
   letter-spacing: 0.1em;
-  /*разрешение с 1980 до 768 -/-*/
   background-color: rgba(45, 54, 81, 0.1);
   padding-left: 1em;
   padding-right: 1em;
@@ -99,7 +96,6 @@ img {
 }
 
 .header {
-  /* position: relative; */
   background-color: #2d3651;
   color: #ffffff;
   min-height: 100vh;
