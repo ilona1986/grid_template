@@ -3,8 +3,8 @@
 
 .btn {
   height: 60px;
-  font-size: 1.125rem; 
-  letter-spacing: 0.1em; 
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
   background-color: rgba($color-primary, 0.1);
   padding-left: 1em;
   padding-right: 1em;
@@ -41,6 +41,8 @@
 .btn--primary {
   background-color: rgba($color-primary, 0.8); /*#2d3651*/
   border: 2px solid $color-primary;
+  cursor: pointer;
+
 
   @include sm {
     width: 100%;

@@ -93,6 +93,7 @@ img {
   background-color: rgba(45, 54, 81, 0.8);
   /*#2d3651*/
   border: 2px solid #2d3651;
+  cursor: pointer;
 }
 
 .header {
@@ -427,12 +428,26 @@ img {
   -webkit-transition: background-color 0.5s, border-color 0.5s;
   -o-transition: background-color 0.5s, border-color 0.5s;
   transition: background-color 0.5s, border-color 0.5s;
-  color: #ffffff;
-  border: 2px solid rgba(45, 54, 81, 0);
+  border: 2px solid rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.25);
   background-color: rgba(255, 255, 255, 0.05);
   font-size: 1.125rem;
   letter-spacing: 0.15em;
+}
+.form-item__input::-webkit-input-placeholder {
+  color: #637588;
+}
+.form-item__input::-moz-placeholder {
+  color: #637588;
+}
+.form-item__input:-ms-input-placeholder {
+  color: #637588;
+}
+.form-item__input::-ms-input-placeholder {
+  color: #637588;
+}
+.form-item__input::placeholder {
+  color: #637588;
 }
 .form-item__input:hover, .form-item__input:focus {
   background-color: rgba(255, 255, 255, 0.15);

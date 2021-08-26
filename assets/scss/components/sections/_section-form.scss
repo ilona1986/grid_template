@@ -31,12 +31,16 @@
     padding-right: 30px;
     padding-left: 30px;
     transition: background-color 0.5s, border-color 0.5s;
-    color: $color-light;
-    border: 2px solid rgba($color-primary, 0);
+    // color: $color-light !important;
+    border: 2px solid rgba($color-light, 0);
     border-bottom-color: rgba($color-light, 0.25);
     background-color: rgba($color-light, 0.05);
     font-size: 1.125rem;
     letter-spacing: 0.15em;
+
+    &::placeholder {
+      color: $color-gray;
+    }
   }
 
   &-item__input:hover,
